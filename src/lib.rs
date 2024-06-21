@@ -171,6 +171,42 @@ mod _mod5_class_3_properties_3_type_properties;
 mod _mod5_class_3_properties_4_read_only_1;
 mod _mod5_class_3_properties_4_read_only_2;
 mod _mod5_class_4_inheritance_1_base;
+mod _mod5_class_4_inheritance_2_abstract;
+mod _mod5_class_4_inheritance_3_interface_inheritance;
+mod _mod5_class_4_inheritance_4_down_casting;
+mod _mod5_class_4_inheritance_5_compatibility_check;
+mod _mod5_class_4_inheritance_6_method_override;
+mod _mod5_class_4_inheritance_7_propertity_override;
+mod _mod5_class_4_inheritance_8_member_hiding;
+mod _mod5_class_4_inheritance_9_private_member;
+mod _mod5_class_5_define_init_1;
+mod _mod5_class_6_field_1;
+mod _mod5_class_7_destructor_1;
+mod _mod5_class_8_constants_1;
+mod _mod5_class_9_check_reference_1;
+mod _mod5_class_10_object_clone_1;
+mod _mod5_class_11_type_member_1;
+mod _mod6_structures_1_definition_init_1;
+mod _mod6_structures_2_constructors_1;
+mod _mod6_structures_3_method_1;
+mod _mod6_structures_4_field_properties_1;
+mod _mod6_structures_5_constants_1;
+mod _mod6_structures_6_inheritance_1;
+mod _mod6_structures_7_inside_structure_1;
+mod _mod7_enum_1_definition_init_1;
+mod _mod7_enum_2_set_base_value_1;
+mod _mod7_enum_3_constructor_1;
+mod _mod7_enum_4_get_list_value_1;
+mod _mod7_enum_5_base_member_value_1;
+mod _mod7_enum_6_convert_to_string_1;
+mod _mod7_enum_7_convert_from_string_1;
+mod _mod7_enum_8_value_storage_1;
+mod _mod7_enum_9_compare_1;
+mod _mod8_interfaces_1_decare_init_1;
+mod _mod8_interfaces_2_method_require_1;
+mod _mod8_interfaces_3_properties_require_1;
+mod _mod8_interfaces_4_protocols_composition_1;
+mod _mod8_interfaces_5_as_is_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1050,6 +1086,184 @@ mod tests {
     #[test]
     fn mod5_test_5_4_1() {
         _mod5_class_4_inheritance_1_base::test();
+    }
+
+    #[test]
+    fn mod5_test_5_4_2() {
+        _mod5_class_4_inheritance_2_abstract::test();
+    }
+
+    #[test]
+    fn mod5_test_5_4_3() {
+        _mod5_class_4_inheritance_3_interface_inheritance::test();
+    }
+
+    #[test]
+    fn mod5_test_5_4_4() {
+        _mod5_class_4_inheritance_4_down_casting::test();
+    }
+
+    #[test]
+    fn mod5_test_5_4_5() {
+        _mod5_class_4_inheritance_5_compatibility_check::test();
+    }
+
+    #[test]
+    fn mod5_test_5_4_6() {
+        _mod5_class_4_inheritance_6_method_override::test();
+    }
+
+    #[test]
+    fn mod5_test_5_4_7() {
+        _mod5_class_4_inheritance_7_propertity_override::test();
+    }
+    #[test]
+    fn mod5_test_5_4_8() {
+        _mod5_class_4_inheritance_8_member_hiding::test();
+    }
+    #[test]
+    fn mod5_test_5_4_9() {
+        _mod5_class_4_inheritance_9_private_member::test();
+    }
+
+    #[test]
+    fn mod5_test_5_5_1() {
+        _mod5_class_5_define_init_1::test();
+    }
+
+    #[test]
+    fn mod5_test_5_6_1() {
+        _mod5_class_6_field_1::test();
+    }
+
+    #[test]
+    fn mod5_test_5_7_1() {
+        _mod5_class_7_destructor_1::test();
+    }
+
+    #[test]
+    fn mod5_test_5_8_1() {
+        _mod5_class_8_constants_1::test();
+    }
+
+    #[test]
+    fn mod5_test_5_9_1() {
+        _mod5_class_9_check_reference_1::test();
+    }
+
+    #[test]
+    fn mod5_test_5_10_1() {
+        _mod5_class_10_object_clone_1::test();
+    }
+
+    #[test]
+    fn mod5_test_5_11_1() {
+        _mod5_class_11_type_member_1::test();
+    }
+
+    #[test]
+    fn mod6_test_6_1_1() {
+        _mod6_structures_1_definition_init_1::test();
+    }
+
+    #[test]
+    fn mod6_test_6_2_1() {
+        _mod6_structures_2_constructors_1::test();
+    }
+
+    #[test]
+    fn mod6_test_6_3_1() {
+        _mod6_structures_3_method_1::test();
+    }
+
+    #[test]
+    fn mod6_test_6_4_1() {
+        _mod6_structures_4_field_properties_1::test();
+    }
+
+    #[test]
+    fn mod6_test_6_5_1() {
+        _mod6_structures_5_constants_1::test();
+    }
+
+    #[test]
+    fn mod6_test_6_6_1() {
+        _mod6_structures_6_inheritance_1::test();
+    }
+
+    #[test]
+    fn mod6_test_6_7_1() {
+        _mod6_structures_7_inside_structure_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_1_1() {
+        _mod7_enum_1_definition_init_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_2_1() {
+        _mod7_enum_2_set_base_value_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_3_1() {
+        _mod7_enum_3_constructor_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_4_1() {
+        _mod7_enum_4_get_list_value_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_5_1() {
+        _mod7_enum_5_base_member_value_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_6_1() {
+        _mod7_enum_6_convert_to_string_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_7_1() {
+        _mod7_enum_7_convert_from_string_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_8_1() {
+        _mod7_enum_8_value_storage_1::test();
+    }
+
+    #[test]
+    fn mod7_test_7_9_1() {
+        _mod7_enum_9_compare_1::test();
+    }
+
+    #[test]
+    fn mod8_test_8_1_1() {
+        _mod8_interfaces_1_decare_init_1::test();
+    }
+
+    #[test]
+    fn mod8_test_8_2_1() {
+        _mod8_interfaces_2_method_require_1::test();
+    }
+
+    #[test]
+    fn mod8_test_8_3_1() {
+        _mod8_interfaces_3_properties_require_1::test();
+    }
+
+    #[test]
+    fn mod8_test_8_4_1() {
+        _mod8_interfaces_4_protocols_composition_1::test();
+    }
+
+    #[test]
+    fn mod8_test_8_5_1() {
+        _mod8_interfaces_5_as_is_1::test();
     }
 
 }
