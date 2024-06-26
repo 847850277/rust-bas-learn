@@ -212,6 +212,9 @@ mod _mod8_interfaces_7_interface_collection_1;
 mod _mod8_interfaces_8_mutating_method_1;
 mod _mod9_generic_type_1_generic_collection_1;
 mod _mod9_generic_type_2_generic_class_1;
+mod _mod9_generic_type_3_generic_method_1;
+mod _mod9_generic_type_4_interface_conformity_1;
+mod _mod9_generic_type_5_sub_principle_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1294,6 +1297,21 @@ mod tests {
     #[test]
     fn mod9_test_9_2_1() {
         _mod9_generic_type_2_generic_class_1::test();
+    }
+
+    #[test]
+    fn mod9_test_9_3_1() {
+        _mod9_generic_type_3_generic_method_1::test();
+    }
+
+    #[test]
+    fn mod9_test_9_4_1() {
+        _mod9_generic_type_4_interface_conformity_1::test();
+    }
+
+    #[test]
+    fn mod9_test_9_5_1() {
+        _mod9_generic_type_5_sub_principle_1::test();
     }
 
 }
