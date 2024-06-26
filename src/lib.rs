@@ -215,6 +215,10 @@ mod _mod9_generic_type_2_generic_class_1;
 mod _mod9_generic_type_3_generic_method_1;
 mod _mod9_generic_type_4_interface_conformity_1;
 mod _mod9_generic_type_5_sub_principle_1;
+mod _mod10_dymic_type_1_init_1;
+mod _mod10_dymic_type_2_return_value_1;
+mod _mod11_function_1_return_value_1;
+mod _mod11_function_2_with_out_return_value_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1312,6 +1316,26 @@ mod tests {
     #[test]
     fn mod9_test_9_5_1() {
         _mod9_generic_type_5_sub_principle_1::test();
+    }
+
+    #[test]
+    fn mod10_test_10_1_1() {
+        _mod10_dymic_type_1_init_1::test();
+    }
+
+    #[test]
+    fn mod10_test_10_2_1() {
+        _mod10_dymic_type_2_return_value_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_1_1() {
+        _mod11_function_1_return_value_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_2_1() {
+        _mod11_function_2_with_out_return_value_1::test();
     }
 
 }
