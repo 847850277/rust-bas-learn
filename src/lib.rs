@@ -219,6 +219,14 @@ mod _mod10_dymic_type_1_init_1;
 mod _mod10_dymic_type_2_return_value_1;
 mod _mod11_function_1_return_value_1;
 mod _mod11_function_2_with_out_return_value_1;
+mod _mod11_function_3_mult_return_value_1;
+mod _mod11_function_4_with_out_param_1;
+mod _mod11_function_5_array_param_1;
+mod _mod11_function_6_out_array_param_1;
+mod _mod11_function_7_in_out_array_param_1;
+mod _mod11_function_8_variable_param_1;
+mod _mod11_function_9_optional_param_1;
+mod _mod11_function_10_recursion_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1336,6 +1344,47 @@ mod tests {
     #[test]
     fn mod11_test_11_2_1() {
         _mod11_function_2_with_out_return_value_1::test();
+    }
+
+
+    #[test]
+    fn mod11_test_11_3_1() {
+        _mod11_function_3_mult_return_value_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_4_1() {
+        _mod11_function_4_with_out_param_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_5_1() {
+        _mod11_function_5_array_param_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_6_1() {
+        _mod11_function_6_out_array_param_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_7_1() {
+        _mod11_function_7_in_out_array_param_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_8_1() {
+        _mod11_function_8_variable_param_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_9_1() {
+        _mod11_function_9_optional_param_1::test();
+    }
+
+    #[test]
+    fn mod11_test_11_10_1() {
+        _mod11_function_10_recursion_1::test();
     }
 
 }
