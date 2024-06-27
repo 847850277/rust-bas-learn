@@ -239,6 +239,12 @@ mod _mod12_lambda_9_modify_capture_variables_1;
 mod _mod12_lambda_10_currying_1;
 mod _mod12_lambda_11_recursion_1;
 mod _mod12_lambda_12_memoization_1;
+mod _mod13_mult_thread_1_start_1;
+mod _mod13_mult_thread_2_start_waiting_1;
+mod _mod13_mult_thread_3_async_call_1;
+mod _mod13_mult_thread_4_sync_blocking_1;
+mod _mod13_mult_thread_5_async_waiting_1;
+mod _mod13_mult_thread_6_passing_variables_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1458,6 +1464,36 @@ mod tests {
     #[test]
     fn mod12_test_12_12_1() {
         _mod12_lambda_12_memoization_1::test();
+    }
+
+    #[test]
+    fn mod13_test_13_1_1() {
+        _mod13_mult_thread_1_start_1::test();
+    }
+
+    #[test]
+    fn mod13_test_13_2_1() {
+        _mod13_mult_thread_2_start_waiting_1::test();
+    }
+
+    #[test]
+    fn mod13_test_13_3_1() {
+        _mod13_mult_thread_3_async_call_1::test();
+    }
+
+    #[test]
+    fn mod13_test_13_4_1() {
+        _mod13_mult_thread_4_sync_blocking_1::test();
+    }
+
+    #[test]
+    fn mod13_test_13_5_1() {
+        _mod13_mult_thread_5_async_waiting_1::test();
+    }
+
+    #[test]
+    fn mod13_test_13_6_1() {
+        _mod13_mult_thread_6_passing_variables_1::test();
     }
 
 }
