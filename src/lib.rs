@@ -233,6 +233,12 @@ mod _mod12_lambda_3_with_out_return_value_1;
 mod _mod12_lambda_4_function_as_param_1;
 mod _mod12_lambda_5_void_function_as_param_1;
 mod _mod12_lambda_6_function_as_return_value_1;
+mod _mod12_lambda_7_mult_operators_1;
+mod _mod12_lambda_8_capture_variables_1;
+mod _mod12_lambda_9_modify_capture_variables_1;
+mod _mod12_lambda_10_currying_1;
+mod _mod12_lambda_11_recursion_1;
+mod _mod12_lambda_12_memoization_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1422,6 +1428,36 @@ mod tests {
     #[test]
     fn mod12_test_12_6_1() {
         _mod12_lambda_6_function_as_return_value_1::test();
+    }
+
+    #[test]
+    fn mod12_test_12_7_1() {
+        _mod12_lambda_7_mult_operators_1::test();
+    }
+
+    #[test]
+    fn mod12_test_12_8_1() {
+        _mod12_lambda_8_capture_variables_1::test();
+    }
+
+    #[test]
+    fn mod12_test_12_9_1() {
+        _mod12_lambda_9_modify_capture_variables_1::test();
+    }
+
+    #[test]
+    fn mod12_test_12_10_1() {
+        _mod12_lambda_10_currying_1::test();
+    }
+
+    #[test]
+    fn mod12_test_12_11_1() {
+        _mod12_lambda_11_recursion_1::test();
+    }
+
+    #[test]
+    fn mod12_test_12_12_1() {
+        _mod12_lambda_12_memoization_1::test();
     }
 
 }
