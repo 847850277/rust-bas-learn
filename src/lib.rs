@@ -245,6 +245,12 @@ mod _mod13_mult_thread_3_async_call_1;
 mod _mod13_mult_thread_4_sync_blocking_1;
 mod _mod13_mult_thread_5_async_waiting_1;
 mod _mod13_mult_thread_6_passing_variables_1;
+mod _mod14_exception_1_catch_all_exception_1;
+mod _mod14_exception_2_catch_specific_exception_1;
+mod _mod14_exception_3_throw_exception_1;
+mod _mod14_exception_4_re_throw_exception_1;
+mod _mod14_exception_5_define_exception_type_1;
+mod _mod14_exception_6_guaranteed_code_exception_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1494,6 +1500,37 @@ mod tests {
     #[test]
     fn mod13_test_13_6_1() {
         _mod13_mult_thread_6_passing_variables_1::test();
+    }
+
+    #[test]
+    fn mod13_test_14_1_1() {
+        _mod14_exception_1_catch_all_exception_1::test();
+    }
+
+    #[test]
+    fn mod13_test_14_2_1() {
+        _mod14_exception_2_catch_specific_exception_1::test();
+    }
+
+    #[test]
+    fn mod13_test_14_3_1() {
+        _mod14_exception_3_throw_exception_1::test();
+    }
+
+    #[test]
+    fn mod13_test_14_4_1() {
+        _mod14_exception_4_re_throw_exception_1::test();
+    }
+
+
+    #[test]
+    fn mod13_test_14_5_1() {
+        _mod14_exception_5_define_exception_type_1::test();
+    }
+
+    #[test]
+    fn mod13_test_14_6_1() {
+        _mod14_exception_6_guaranteed_code_exception_1::test();
     }
 
 }
