@@ -251,6 +251,18 @@ mod _mod14_exception_3_throw_exception_1;
 mod _mod14_exception_4_re_throw_exception_1;
 mod _mod14_exception_5_define_exception_type_1;
 mod _mod14_exception_6_guaranteed_code_exception_1;
+mod _mod14_exception_7_if_no_exception_occurred_1;
+mod _mod14_exception_8_method_throw_exception_1;
+mod _mod14_exception_9_throw_expression_1;
+mod _mod14_exception_10_throw_panic_1;
+mod _mod15_regular_expression_1_search_a_match_1;
+mod _mod15_regular_expression_2_search_all_match_1;
+mod _mod15_regular_expression_3_check_match_string_1;
+mod _mod15_regular_expression_4_check_match_hole_string_1;
+mod _mod15_regular_expression_5_replace_match_1;
+mod _mod15_regular_expression_6_replace_using_function_1;
+mod _mod15_regular_expression_7_named_group_1;
+mod _mod15_regular_expression_8_reg_expression_option_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1503,34 +1515,94 @@ mod tests {
     }
 
     #[test]
-    fn mod13_test_14_1_1() {
+    fn mod14_test_14_1_1() {
         _mod14_exception_1_catch_all_exception_1::test();
     }
 
     #[test]
-    fn mod13_test_14_2_1() {
+    fn mod14_test_14_2_1() {
         _mod14_exception_2_catch_specific_exception_1::test();
     }
 
     #[test]
-    fn mod13_test_14_3_1() {
+    fn mod14_test_14_3_1() {
         _mod14_exception_3_throw_exception_1::test();
     }
 
     #[test]
-    fn mod13_test_14_4_1() {
+    fn mod14_test_14_4_1() {
         _mod14_exception_4_re_throw_exception_1::test();
     }
 
 
     #[test]
-    fn mod13_test_14_5_1() {
+    fn mod14_test_14_5_1() {
         _mod14_exception_5_define_exception_type_1::test();
     }
 
     #[test]
-    fn mod13_test_14_6_1() {
+    fn mod14_test_14_6_1() {
         _mod14_exception_6_guaranteed_code_exception_1::test();
+    }
+
+    #[test]
+    fn mod14_test_14_7_1() {
+        _mod14_exception_7_if_no_exception_occurred_1::test();
+    }
+
+    #[test]
+    fn mod14_test_14_8_1() {
+        _mod14_exception_8_method_throw_exception_1::test();
+    }
+
+    #[test]
+    fn mod14_test_14_9_1() {
+        _mod14_exception_9_throw_expression_1::test();
+    }
+
+    #[test]
+    fn mod14_test_14_10_1() {
+        _mod14_exception_10_throw_panic_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_1_1() {
+        _mod15_regular_expression_1_search_a_match_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_2_1() {
+        _mod15_regular_expression_2_search_all_match_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_3_1() {
+        _mod15_regular_expression_3_check_match_string_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_4_1() {
+        _mod15_regular_expression_4_check_match_hole_string_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_5_1() {
+        _mod15_regular_expression_5_replace_match_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_6_1() {
+        _mod15_regular_expression_6_replace_using_function_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_7_1() {
+        _mod15_regular_expression_7_named_group_1::test();
+    }
+
+    #[test]
+    fn mod15_test_15_8_1() {
+        _mod15_regular_expression_8_reg_expression_option_1::test();
     }
 
 }
