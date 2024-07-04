@@ -278,6 +278,13 @@ mod _mod16_file_2_text_file_1_read;
 mod _mod16_file_2_text_file_2_read_line;
 mod _mod16_file_2_text_file_3_write_file;
 mod _mod16_file_2_text_file_4_append_text_to_file;
+mod _mod16_file_3_binary_1_read;
+mod _mod16_file_3_binary_2_write;
+mod _mod16_file_3_binary_3_buffer_read_write;
+mod _mod16_file_3_binary_4_write_array_to_file;
+mod _mod16_file_3_binary_5_read_array_from_file;
+mod _mod16_file_3_binary_6_write_dictionary_to_file;
+mod _mod16_file_3_binary_7_read_dictitonary_from_file;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1693,6 +1700,42 @@ mod tests {
     #[test]
     fn mod16_test_16_2_4() {
         _mod16_file_2_text_file_4_append_text_to_file::test();
+    }
+
+    #[test]
+    fn mod16_test_16_3_1() {
+        _mod16_file_3_binary_1_read::test();
+    }
+
+    #[test]
+    fn mod16_test_16_3_2() {
+        _mod16_file_3_binary_2_write::test();
+    }
+
+
+    #[test]
+    fn mod16_test_16_3_3() {
+        _mod16_file_3_binary_3_buffer_read_write::test();
+    }
+
+    #[test]
+    fn mod16_test_16_3_4() {
+        _mod16_file_3_binary_4_write_array_to_file::test();
+    }
+
+    #[test]
+    fn mod16_test_16_3_5() {
+        _mod16_file_3_binary_5_read_array_from_file::test();
+    }
+
+    #[test]
+    fn mod16_test_16_3_6() {
+        _mod16_file_3_binary_6_write_dictionary_to_file::test();
+    }
+
+    #[test]
+    fn mod16_test_16_3_7() {
+        _mod16_file_3_binary_7_read_dictitonary_from_file::test();
     }
 
 }
