@@ -274,6 +274,10 @@ mod _mod16_file_1_basic_8_delete_directory;
 mod _mod16_file_1_basic_9_delete_directory_with_data;
 mod _mod16_file_1_basic_10_copy_directory;
 mod _mod16_file_1_basic_11_list_file_of_directory;
+mod _mod16_file_2_text_file_1_read;
+mod _mod16_file_2_text_file_2_read_line;
+mod _mod16_file_2_text_file_3_write_file;
+mod _mod16_file_2_text_file_4_append_text_to_file;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1669,6 +1673,26 @@ mod tests {
     #[test]
     fn mod16_test_16_1_11() {
         _mod16_file_1_basic_11_list_file_of_directory::test();
+    }
+
+    #[test]
+    fn mod16_test_16_2_1() {
+        _mod16_file_2_text_file_1_read::test();
+    }
+
+    #[test]
+    fn mod16_test_16_2_2() {
+        _mod16_file_2_text_file_2_read_line::test();
+    }
+
+    #[test]
+    fn mod16_test_16_2_3() {
+        _mod16_file_2_text_file_3_write_file::test();
+    }
+
+    #[test]
+    fn mod16_test_16_2_4() {
+        _mod16_file_2_text_file_4_append_text_to_file::test();
     }
 
 }
