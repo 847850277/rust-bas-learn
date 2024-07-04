@@ -263,6 +263,17 @@ mod _mod15_regular_expression_5_replace_match_1;
 mod _mod15_regular_expression_6_replace_using_function_1;
 mod _mod15_regular_expression_7_named_group_1;
 mod _mod15_regular_expression_8_reg_expression_option_1;
+mod _mod16_file_1_basic_1_exist;
+mod _mod16_file_1_basic_2_delete_file;
+mod _mod16_file_1_basic_3_file_copying;
+mod _mod16_file_1_basic_4_file_move;
+mod _mod16_file_1_basic_5_getting_file_properties;
+mod _mod16_file_1_basic_6_getting_working_directory;
+mod _mod16_file_1_basic_7_create_directory;
+mod _mod16_file_1_basic_8_delete_directory;
+mod _mod16_file_1_basic_9_delete_directory_with_data;
+mod _mod16_file_1_basic_10_copy_directory;
+mod _mod16_file_1_basic_11_list_file_of_directory;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1603,6 +1614,61 @@ mod tests {
     #[test]
     fn mod15_test_15_8_1() {
         _mod15_regular_expression_8_reg_expression_option_1::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_1() {
+        _mod16_file_1_basic_1_exist::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_2() {
+        _mod16_file_1_basic_2_delete_file::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_3() {
+        _mod16_file_1_basic_3_file_copying::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_4() {
+        _mod16_file_1_basic_4_file_move::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_5() {
+        _mod16_file_1_basic_5_getting_file_properties::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_6() {
+        _mod16_file_1_basic_6_getting_working_directory::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_7() {
+        _mod16_file_1_basic_7_create_directory::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_8() {
+        _mod16_file_1_basic_8_delete_directory::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_9() {
+        _mod16_file_1_basic_9_delete_directory_with_data::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_10() {
+        _mod16_file_1_basic_10_copy_directory::test();
+    }
+
+    #[test]
+    fn mod16_test_16_1_11() {
+        _mod16_file_1_basic_11_list_file_of_directory::test();
     }
 
 }
