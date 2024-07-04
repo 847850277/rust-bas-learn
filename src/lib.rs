@@ -285,6 +285,10 @@ mod _mod16_file_3_binary_4_write_array_to_file;
 mod _mod16_file_3_binary_5_read_array_from_file;
 mod _mod16_file_3_binary_6_write_dictionary_to_file;
 mod _mod16_file_3_binary_7_read_dictitonary_from_file;
+mod _mod16_file_4_xml_1_read;
+mod _mod16_file_4_xml_2_write;
+mod _mod16_file_5_zip_1_package;
+mod _mod16_file_5_zip_2_un_package;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1736,6 +1740,26 @@ mod tests {
     #[test]
     fn mod16_test_16_3_7() {
         _mod16_file_3_binary_7_read_dictitonary_from_file::test();
+    }
+
+    #[test]
+    fn mod16_test_16_4_1() {
+        _mod16_file_4_xml_1_read::test();
+    }
+
+    #[test]
+    fn mod16_test_16_4_2() {
+        _mod16_file_4_xml_2_write::test();
+    }
+
+    #[test]
+    fn mod16_test_16_5_1() {
+        _mod16_file_5_zip_1_package::test();
+    }
+
+    #[test]
+    fn mod16_test_16_5_2() {
+        _mod16_file_5_zip_2_un_package::test();
     }
 
 }
