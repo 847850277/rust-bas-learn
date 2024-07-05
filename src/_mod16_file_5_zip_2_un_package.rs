@@ -5,7 +5,7 @@ use std::fs;
 use std::io::prelude::*;
 fn main() -> ZipResult<()> {
     let zip_file = "/Users/zhengpeng/Work/Source/Code/rust-code/rust-bas-learn/file.txt.zip";
-    let file = File::open(zip_file);
+    let file = File::open(zip_file)?;
     let mut zip = ZipArchive::new(file)?;
     for i in 0..zip.len() {
         let mut file = zip.by_index(i)?;

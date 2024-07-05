@@ -288,7 +288,18 @@ mod _mod16_file_3_binary_7_read_dictitonary_from_file;
 mod _mod16_file_4_xml_1_read;
 mod _mod16_file_4_xml_2_write;
 mod _mod16_file_5_zip_1_package;
+
 mod _mod16_file_5_zip_2_un_package;
+mod _mod17_operator_overloading_1_unary_1;
+mod _mod17_operator_overloading_2_binary_1;
+mod _mod17_operator_overloading_3_equivalence_1;
+mod _mod17_operator_overloading_4_comparison_1;
+mod _mod17_operator_overloading_5_customer_1;
+mod _mod18_color_1_rgb_to_color_1;
+mod _mod18_color_2_color_to_rgb_1;
+mod _mod18_color_3_rgb_to_html_color_1;
+mod _mod18_color_4_html_color_to_rgb_1;
+mod _mod18_color_5_color_to_html_color_1;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -296,6 +307,7 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
+
     use super::*;
 
     #[test]
@@ -1761,5 +1773,56 @@ mod tests {
     fn mod16_test_16_5_2() {
         _mod16_file_5_zip_2_un_package::test();
     }
+
+    #[test]
+    fn mod17_test_17_1_1() {
+        _mod17_operator_overloading_1_unary_1::test();
+    }
+
+    #[test]
+    fn mod17_test_17_2_1() {
+        _mod17_operator_overloading_2_binary_1::test();
+    }
+
+    #[test]
+    fn mod17_test_17_3_1() {
+        _mod17_operator_overloading_3_equivalence_1::test();
+    }
+
+    #[test]
+    fn mod17_test_17_4_1() {
+        _mod17_operator_overloading_4_comparison_1::test();
+    }
+
+    #[test]
+    fn mod17_test_17_5_1() {
+        _mod17_operator_overloading_5_customer_1::test();
+    }
+
+    #[test]
+    fn mod18_test_18_1_1() {
+        _mod18_color_1_rgb_to_color_1::test();
+    }
+
+    #[test]
+    fn mod18_test_18_2_1() {
+        _mod18_color_2_color_to_rgb_1::test();
+    }
+
+    #[test]
+    fn mod18_test_18_3_1() {
+        _mod18_color_3_rgb_to_html_color_1::test();
+    }
+
+    #[test]
+    fn mod18_test_18_4_1() {
+        _mod18_color_4_html_color_to_rgb_1::test();
+    }
+
+    #[test]
+    fn mod18_test_18_5_1() {
+        _mod18_color_5_color_to_html_color_1::test();
+    }
+
 
 }
