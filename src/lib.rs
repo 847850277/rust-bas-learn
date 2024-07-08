@@ -300,6 +300,15 @@ mod _mod18_color_2_color_to_rgb_1;
 mod _mod18_color_3_rgb_to_html_color_1;
 mod _mod18_color_4_html_color_to_rgb_1;
 mod _mod18_color_5_color_to_html_color_1;
+mod _mod19_algorithms_1_search_1_line;
+mod _mod19_algorithms_1_search_2_fast_line;
+mod _mod19_algorithms_1_search_3_binary;
+mod _mod19_algorithms_1_search_4_interpolation;
+mod _mod19_algorithms_2_sort_1_bubble;
+mod _mod19_algorithms_2_sort_2_quick;
+mod _mod19_algorithms_2_sort_3_counting;
+mod _mod19_algorithms_2_sort_4_merge;
+mod _mod19_algorithms_2_sort_5_radix;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1822,6 +1831,53 @@ mod tests {
     #[test]
     fn mod18_test_18_5_1() {
         _mod18_color_5_color_to_html_color_1::test();
+    }
+
+    #[test]
+    fn mod19_test_19_1_1() {
+        _mod19_algorithms_1_search_1_line::test();
+    }
+
+    #[test]
+    fn mod19_test_19_1_2() {
+        _mod19_algorithms_1_search_2_fast_line::test();
+    }
+
+
+    #[test]
+    fn mod19_test_19_1_3() {
+        _mod19_algorithms_1_search_3_binary::test();
+    }
+
+    #[test]
+    fn mod19_test_19_1_4() {
+        _mod19_algorithms_1_search_4_interpolation::test();
+    }
+
+    #[test]
+    fn mod19_test_19_2_1() {
+        _mod19_algorithms_2_sort_1_bubble::test();
+    }
+
+    #[test]
+    fn mod19_test_19_2_2() {
+        _mod19_algorithms_2_sort_2_quick::test();
+    }
+
+    #[test]
+    fn mod19_test_19_2_3() {
+        _mod19_algorithms_2_sort_3_counting::test();
+    }
+
+
+    #[test]
+    fn mod19_test_19_2_4() {
+        _mod19_algorithms_2_sort_4_merge::test();
+    }
+
+    #[test]
+    fn mod19_test_19_2_5() {
+        _mod19_algorithms_2_sort_5_radix::test();
     }
 
 
