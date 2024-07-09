@@ -309,6 +309,11 @@ mod _mod19_algorithms_2_sort_2_quick;
 mod _mod19_algorithms_2_sort_3_counting;
 mod _mod19_algorithms_2_sort_4_merge;
 mod _mod19_algorithms_2_sort_5_radix;
+mod _mod20_patterns_1_creational_1_abstract_factory;
+mod _mod20_patterns_1_creational_2_builder;
+mod _mod20_patterns_1_creational_3_factory_method;
+mod _mod20_patterns_1_creational_4_prototype;
+mod _mod20_patterns_1_creational_5_singleton;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -1878,6 +1883,31 @@ mod tests {
     #[test]
     fn mod19_test_19_2_5() {
         _mod19_algorithms_2_sort_5_radix::test();
+    }
+
+    #[test]
+    fn mod20_test_20_1_1() {
+        _mod20_patterns_1_creational_1_abstract_factory::test();
+    }
+
+    #[test]
+    fn mod20_test_20_1_2() {
+        _mod20_patterns_1_creational_2_builder::test();
+    }
+
+    #[test]
+    fn mod20_test_20_1_3() {
+        _mod20_patterns_1_creational_3_factory_method::test();
+    }
+
+    #[test]
+    fn mod20_test_20_1_4() {
+        _mod20_patterns_1_creational_4_prototype::test();
+    }
+
+    #[test]
+    fn mod20_test_20_1_5() {
+        _mod20_patterns_1_creational_5_singleton::test();
     }
 
 
