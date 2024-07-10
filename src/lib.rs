@@ -1,7 +1,6 @@
-
+mod leetcode;
 mod _mod1_init_of_type_1_simple_type;
 mod _mod1_init_of_type_2_enum_type;
-
 mod _mod1_init_of_type_3_collection_type_1_array;
 mod _mod1_init_of_type_3_collection_type_2_dict;
 mod _mod1_init_of_type_3_collection_type_3_set;
@@ -314,6 +313,22 @@ mod _mod20_patterns_1_creational_2_builder;
 mod _mod20_patterns_1_creational_3_factory_method;
 mod _mod20_patterns_1_creational_4_prototype;
 mod _mod20_patterns_1_creational_5_singleton;
+mod _mod20_patterns_2_structural_1_adapter;
+mod _mod20_patterns_2_structural_2_bridge;
+mod _mod20_patterns_2_structural_3_composite;
+mod _mod20_patterns_2_structural_4_decorator;
+mod _mod20_patterns_2_structural_5_facade;
+mod _mod20_patterns_2_structural_6_flyweight;
+mod _mod20_patterns_2_structural_7_proxy;
+mod _mod20_patterns_3_behavioral_1_chain_of_responsibility;
+mod _mod20_patterns_3_behavioral_2_command;
+mod _mod20_patterns_3_behavioral_3_interpreter;
+mod _mod20_patterns_3_behavioral_4_interator;
+mod _mod20_patterns_3_behavioral_5_observer;
+mod _mod20_patterns_3_behavioral_6_strategy;
+mod _mod20_patterns_3_behavioral_7_template_method;
+mod _mod20_patterns_3_behavioral_8_visitor;
+
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -321,7 +336,7 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
-
+    use crate::leetcode::{incremovable_subarray_count, two_sum};
     use super::*;
 
     #[test]
@@ -1908,6 +1923,91 @@ mod tests {
     #[test]
     fn mod20_test_20_1_5() {
         _mod20_patterns_1_creational_5_singleton::test();
+    }
+
+    #[test]
+    fn mod20_test_20_2_1() {
+        _mod20_patterns_2_structural_1_adapter::test();
+    }
+
+    #[test]
+    fn mod20_test_20_2_2() {
+        _mod20_patterns_2_structural_2_bridge::test();
+    }
+
+    #[test]
+    fn mod20_test_20_2_3() {
+        _mod20_patterns_2_structural_3_composite::test();
+    }
+
+    #[test]
+    fn mod20_test_20_2_4() {
+        _mod20_patterns_2_structural_4_decorator::test();
+    }
+
+    #[test]
+    fn mod20_test_20_2_5() {
+        _mod20_patterns_2_structural_5_facade::test();
+    }
+
+    #[test]
+    fn mod20_test_20_2_6() {
+        _mod20_patterns_2_structural_6_flyweight::test();
+    }
+
+    #[test]
+    fn mod20_test_20_2_7() {
+        _mod20_patterns_2_structural_7_proxy::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_1() {
+        _mod20_patterns_3_behavioral_1_chain_of_responsibility::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_2() {
+        _mod20_patterns_3_behavioral_2_command::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_3() {
+        _mod20_patterns_3_behavioral_3_interpreter::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_4() {
+        _mod20_patterns_3_behavioral_4_interator::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_5() {
+        _mod20_patterns_3_behavioral_5_observer::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_6() {
+        _mod20_patterns_3_behavioral_6_strategy::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_7() {
+        _mod20_patterns_3_behavioral_7_template_method::test();
+    }
+
+    #[test]
+    fn mod20_test_20_3_8() {
+        _mod20_patterns_3_behavioral_8_visitor::test();
+    }
+
+    #[test]
+    fn leetcode_two_sum() {
+        two_sum::test();
+    }
+
+    #[test]
+    fn leetcode_incremovable_subarray_count() {
+        incremovable_subarray_count::test();
     }
 
 
