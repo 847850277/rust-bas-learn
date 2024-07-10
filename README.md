@@ -24,6 +24,7 @@ rust-bas-learn
 - 算法
 - 设计模式
 - 扩展
+- leetcode
 
 
 code from [rust-recipes-pro](https://apps.apple.com/lb/app/rust-recipes-pro/id6443946748)
