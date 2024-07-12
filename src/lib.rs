@@ -328,6 +328,10 @@ mod _mod20_patterns_3_behavioral_5_observer;
 mod _mod20_patterns_3_behavioral_6_strategy;
 mod _mod20_patterns_3_behavioral_7_template_method;
 mod _mod20_patterns_3_behavioral_8_visitor;
+mod _mod21_extensions_1_add_object_method_1;
+mod _mod21_extensions_2_add_type_method_1;
+mod _mod21_extensions_3_add_properties_1;
+mod _mod21_extensions_4_add_initializers_1;
 
 
 pub fn add(left: usize, right: usize) -> usize {
@@ -336,7 +340,7 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
-    use crate::leetcode::{incremovable_subarray_count, two_sum};
+    use crate::leetcode::{incremovable_subarray_count, minimum_number_game, two_sum};
     use super::*;
 
     #[test]
@@ -2001,6 +2005,26 @@ mod tests {
     }
 
     #[test]
+    fn mod21_test_21_1_1() {
+        _mod21_extensions_1_add_object_method_1::test();
+    }
+
+    #[test]
+    fn mod21_test_21_2_1() {
+        _mod21_extensions_2_add_type_method_1::test();
+    }
+
+    #[test]
+    fn mod21_test_21_3_1() {
+        _mod21_extensions_3_add_properties_1::test();
+    }
+
+    #[test]
+    fn mod21_test_21_4_1() {
+        _mod21_extensions_4_add_initializers_1::test();
+    }
+
+    #[test]
     fn leetcode_two_sum() {
         two_sum::test();
     }
@@ -2008,6 +2032,11 @@ mod tests {
     #[test]
     fn leetcode_incremovable_subarray_count() {
         incremovable_subarray_count::test();
+    }
+
+    #[test]
+    fn minimum_number_game() {
+        minimum_number_game::test();
     }
 
 
