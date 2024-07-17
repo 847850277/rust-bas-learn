@@ -332,6 +332,7 @@ mod _mod21_extensions_1_add_object_method_1;
 mod _mod21_extensions_2_add_type_method_1;
 mod _mod21_extensions_3_add_properties_1;
 mod _mod21_extensions_4_add_initializers_1;
+mod reuqest;
 
 
 pub fn add(left: usize, right: usize) -> usize {
@@ -340,7 +341,8 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
-    use crate::leetcode::{incremovable_subarray_count, minimum_number_game, two_sum};
+    use crate::leetcode::{find_common_elements_between_two_arrays, incremovable_subarray_count, minimum_number_game, palindrome_number, roman_to_int, two_sum};
+    use crate::reuqest::request_url;
     use super::*;
 
     #[test]
@@ -2039,5 +2041,20 @@ mod tests {
         minimum_number_game::test();
     }
 
+
+    #[test]
+    fn leetcode_find_common_elements_between_two_arrays() {
+        find_common_elements_between_two_arrays::test();
+    }
+
+    #[test]
+    fn leetcode_palindrome_number() {
+        palindrome_number::test();
+    }
+
+    #[tokio::test]
+    async fn request_test() {
+        request_url::test().await;
+    }
 
 }
