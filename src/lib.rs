@@ -333,7 +333,7 @@ mod _mod21_extensions_2_add_type_method_1;
 mod _mod21_extensions_3_add_properties_1;
 mod _mod21_extensions_4_add_initializers_1;
 mod reuqest;
-mod rocketmqclient;
+mod rockermq;
 
 
 pub fn add(left: usize, right: usize) -> usize {
@@ -342,9 +342,9 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
-    use crate::leetcode::{find_common_elements_between_two_arrays, incremovable_subarray_count, minimum_number_game, palindrome_number, roman_to_int, two_sum};
+    use crate::leetcode::*;
     use crate::reuqest::request_url;
-    use crate::rocketmqclient::producer;
+    use crate::rockermq::*;
     use super::*;
 
     #[test]
@@ -2057,6 +2057,12 @@ mod tests {
     #[tokio::test]
     async fn request_test() {
         request_url::test().await;
+    }
+
+    #[test]
+    fn broker_config_get_properties() {
+        broker_config_get_properties::test();
+        broker_config_get_properties::test_1();
     }
 
 

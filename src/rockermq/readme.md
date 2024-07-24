@@ -34,8 +34,12 @@ broker 注册到nameserver
 
 broker接收消息
 
+- 1、broker_bootstrap.rs::broker_runtime.start() line 43
+- 2、broker_runtime.rs::start_basic_service() line 615
+- 3、broker_runtime.rs::server.run(request_processor).await line: 626 或者 broker_runtime.rs::fast_server.run(fast_request_processor).await line 631
 
 
+https://juejin.cn/column/7188043825917460535
 
 ### 一些类
 
