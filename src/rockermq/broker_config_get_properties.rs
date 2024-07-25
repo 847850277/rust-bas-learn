@@ -30,11 +30,11 @@ pub fn get_properties() -> HashMap<String,Box<dyn Any>> {
     properties
 }
 
-pub fn get_properties_1<T>() -> HashMap<String,T> {
-    let mut properties: HashMap<String,T> = HashMap::new();
-    properties.insert("brokerName".to_string(), 1);
-    properties.insert("broker_identity.brokerId".to_string(), "2");
-    properties.insert("broker_identity.brokerClusterName".to_string(), true);
+pub fn get_properties_1() -> HashMap<String,String> {
+    let mut properties = HashMap::new();
+    // properties.insert("brokerName".to_string(), 1);
+    properties.insert("broker_identity.brokerId".to_string(), String::new());
+    // properties.insert("broker_identity.brokerClusterName".to_string(), true);
     properties
 }
 

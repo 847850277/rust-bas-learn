@@ -334,6 +334,7 @@ mod _mod21_extensions_3_add_properties_1;
 mod _mod21_extensions_4_add_initializers_1;
 mod reuqest;
 mod rockermq;
+mod starknet;
 
 
 pub fn add(left: usize, right: usize) -> usize {
@@ -345,6 +346,7 @@ mod tests {
     use crate::leetcode::*;
     use crate::reuqest::request_url;
     use crate::rockermq::*;
+    use crate::starknet::felt_element;
     use super::*;
 
     #[test]
@@ -2063,6 +2065,11 @@ mod tests {
     fn broker_config_get_properties() {
         broker_config_get_properties::test();
         broker_config_get_properties::test_1();
+    }
+
+    #[test]
+    fn felt_element() {
+        felt_element::test();
     }
 
 
