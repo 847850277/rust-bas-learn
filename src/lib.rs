@@ -335,6 +335,7 @@ mod _mod21_extensions_4_add_initializers_1;
 mod reuqest;
 mod rockermq;
 mod starknet;
+mod axum_session_sqllite;
 
 
 pub fn add(left: usize, right: usize) -> usize {
@@ -343,6 +344,7 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
+    use crate::axum_session_sqllite::main;
     use crate::leetcode::*;
     use crate::reuqest::request_url;
     use crate::rockermq::*;
