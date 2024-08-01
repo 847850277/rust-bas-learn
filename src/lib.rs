@@ -336,6 +336,7 @@ mod reuqest;
 mod rockermq;
 mod starknet;
 mod axum_session_sqllite;
+mod serde;
 
 
 pub fn add(left: usize, right: usize) -> usize {
@@ -344,10 +345,10 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
-    use crate::axum_session_sqllite::main;
     use crate::leetcode::*;
     use crate::reuqest::request_url;
     use crate::rockermq::*;
+    use crate::serde::{map_to_json, map_to_json_test};
     use crate::starknet::felt_element;
     use super::*;
 
@@ -2074,5 +2075,22 @@ mod tests {
         felt_element::test();
     }
 
+    #[test]
+    fn map_to_json() {
+        map_to_json::test();
+    }
+
+    #[test]
+    fn map_to_json_2() {
+        map_to_json::test_2();
+    }
+
+    #[test]
+    fn map_to_json_3() {
+        map_to_json_test::test();
+    }
 
 }
+
+
+
