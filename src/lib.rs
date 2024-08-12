@@ -338,6 +338,8 @@ mod starknet;
 mod axum_session_sqllite;
 mod serde;
 
+mod r#struct;
+
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -346,6 +348,8 @@ pub fn add(left: usize, right: usize) -> usize {
 #[cfg(test)]
 mod tests {
     use crate::leetcode::*;
+    use crate::r#struct::people;
+    use crate::r#struct::people::People;
     use crate::reuqest::request_url;
     use crate::rockermq::*;
     use crate::serde::{map_to_json, map_to_json_test};
@@ -2088,6 +2092,16 @@ mod tests {
     #[test]
     fn map_to_json_3() {
         map_to_json_test::test();
+    }
+
+    #[test]
+    fn test_struct_1(){
+        people::test1();
+    }
+
+    #[test]
+    fn test_struct_2(){
+        people::test2();
     }
 
 }

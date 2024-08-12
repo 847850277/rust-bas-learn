@@ -28,3 +28,7 @@ rust-bas-learn
 
 
 code from [rust-recipes-pro](https://apps.apple.com/lb/app/rust-recipes-pro/id6443946748)
+
+https://doc.rust-lang.org/error_codes/error-index.html
+
+https://www.less-bug.com/posts/rust-get-to-know-all-kinds-of-boxes-box-rc-arc-cell-refcell/
