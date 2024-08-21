@@ -352,7 +352,7 @@ mod tests {
     use crate::r#struct::people::People;
     use crate::reuqest::request_url;
     use crate::rockermq::*;
-    use crate::serde::{map_to_json, map_to_json_test};
+    use crate::serde::{consumer_connection, map_to_json, map_to_json_test};
     use crate::starknet::felt_element;
     use super::*;
 
@@ -2092,6 +2092,11 @@ mod tests {
     #[test]
     fn map_to_json_3() {
         map_to_json_test::test();
+    }
+
+    #[test]
+    fn consumer_connection_test1() {
+        consumer_connection::test();
     }
 
     #[test]
