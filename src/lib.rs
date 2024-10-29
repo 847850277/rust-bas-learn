@@ -340,6 +340,8 @@ mod serde;
 
 mod r#struct;
 
+mod web;
+
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -354,6 +356,7 @@ mod tests {
     use crate::rockermq::*;
     use crate::serde::{consumer_connection, map_to_json, map_to_json_test};
     use crate::starknet::felt_element;
+    use crate::web::simple_route;
     use super::*;
 
     #[test]
@@ -1428,7 +1431,8 @@ mod tests {
 
     #[test]
     fn mod9_test_9_2_1() {
-        _mod9_generic_type_2_generic_class_1::test();
+        //_mod9_generic_type_2_generic_class_1::test();
+        _mod9_generic_type_2_generic_class_1::test1();
     }
 
     #[test]
@@ -2107,6 +2111,11 @@ mod tests {
     #[test]
     fn test_struct_2(){
         people::test2();
+    }
+
+    #[test]
+    fn test_web_1(){
+        simple_route::main();
     }
 
 }
