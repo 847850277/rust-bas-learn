@@ -50,8 +50,6 @@ pub(crate) async fn test_2() {
     route_method_future.await;
     println!("Route and RouteMethod handle");
 
-
-
 }
 
 pub(crate) async fn test_3() {
