@@ -1389,6 +1389,11 @@ mod tests {
         _mod8_interfaces_1_decare_init_1::test();
     }
 
+    #[tokio::test]
+    async fn mod8_test_8_1_2() {
+        _mod8_interfaces_1_decare_init_1::test_1().await;
+    }
+
     #[test]
     fn mod8_test_8_2_1() {
         _mod8_interfaces_2_method_require_1::test();
