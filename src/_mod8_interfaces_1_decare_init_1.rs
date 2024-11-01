@@ -40,7 +40,7 @@ impl EndPoint for RouteMethod {
 }
 
 
-pub(crate) async fn test_1() {
+pub(crate) async fn test_2() {
 
     let route = Route{};
     let route_method = RouteMethod{};
@@ -52,4 +52,8 @@ pub(crate) async fn test_1() {
 
 
 
+}
+
+pub(crate) async fn test_3() {
+    todo!()
 }
