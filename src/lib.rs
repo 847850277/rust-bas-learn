@@ -341,6 +341,7 @@ mod serde;
 mod r#struct;
 
 mod web;
+mod http_body;
 
 
 pub fn add(left: usize, right: usize) -> usize {
@@ -2121,6 +2122,11 @@ mod tests {
     #[test]
     fn test_web_1(){
         simple_route::main();
+    }
+
+    #[test]
+    fn test_http_body_1(){
+        http_body::main();
     }
 
 }
