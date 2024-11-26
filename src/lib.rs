@@ -2126,7 +2126,7 @@ mod tests {
 
     #[test]
     fn test_http_body_1(){
-        http_body::main();
+        http_body::test1();
     }
 
 }
