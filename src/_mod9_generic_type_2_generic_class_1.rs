@@ -96,6 +96,7 @@ pub fn test1() {
     // int test
     let response = Response::new(5);
     let text = response.as_text();
+    let x = response.get_body();
     //text is "5"
     println!("text is {text}");
     let mut response = Response::new_empty();

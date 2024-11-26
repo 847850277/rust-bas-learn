@@ -39,3 +39,8 @@ num = "0.4.3"
 http-body = "1.0.1"
 http-body-util = "0.1"
 bytes = "1"
+http = "0.2"
+hyper = { version = "1", features = ["full"] }
+hyper-util = { version = "0.1", features = ["full"] }
+
+
