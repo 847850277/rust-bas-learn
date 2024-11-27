@@ -82,3 +82,46 @@ pub(crate) fn test(){
     let p2 = Pig;
     get_weight2(p2);
 }
+
+// 静态分发和动态分发
+
+// trait 对象通过指针来创建，如 & 或 Box<T>(一种智能指针，可以把数据存放到堆上)：&dyn Trait or Box<dyn Trait>
+// Box是Rust中唯一可以把数据强制分配到堆上的类型
+
+// 静态分发:在编译期通过具体类型实例直接调用方法,编译期单态化
+
+// 动态分发:在运行期通过指针调用方法,运行期多态化
+
+// 静态分发
+pub(crate) fn static_dispatch(){
+    let d = Dog;
+    let c = Cat;
+    let p = Pig;
+
+    // 静态分发
+    // 编译期单态化
+    // 编译期就知道调用的是哪个方法
+    // 编译期就知道调用的是哪个方法
+    // 编译期就知道调用的是哪个方法
+    println!("{}", d.make_sound());
+    println!("{}", c.make_sound());
+    println!("{}", p.make_sound());
+}
+
+// 动态分发
+pub(crate) fn dynamic_dispatch(){
+    let d = Dog;
+    let c = Cat;
+    let p = Pig;
+
+    // 动态分发
+    // 运行期多态化
+    // 运行期才知道调用的是哪个方法
+    // 运行期才知道调用的是哪个方法
+    // 运行期才知道调用的是哪个方法
+    let animals: Vec<Box<dyn Animal>> = vec![Box::new(d), Box::new(c), Box::new(p)];
+
+    for animal in animals{
+        println!("{}", animal.make_sound());
+    }
+}
