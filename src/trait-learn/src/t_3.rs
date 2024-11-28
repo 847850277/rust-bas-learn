@@ -69,5 +69,6 @@ pub fn test(){
     cosmetics.set_inventory(10);
     println!("Cosmetics: name: {}, price: {}, inventory: {}, brand: {}", cosmetics.name, cosmetics.price, cosmetics.inventory, cosmetics.brand);
 
+    println!("size of book: {}", std::mem::size_of_val(&book));
 
 }
