@@ -9,12 +9,9 @@ pub(crate) fn test() {
 
     //the third method
     let str_half = "0,5";
-    let half = str_half
-        .replace(",", ".")
-        .parse::<f32>().unwrap();
+    let half = str_half.replace(",", ".").parse::<f32>().unwrap();
 
     println!("pi_float is {pi_float}");
     println!("exp is {exp}");
     println!("half is {half}");
-
 }

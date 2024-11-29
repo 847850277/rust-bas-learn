@@ -1,16 +1,17 @@
 //There are no classes in Rust
 
-use std::collections::HashMap;
 use num::cast::ToPrimitive;
+use std::collections::HashMap;
 
 struct Size<T> {
     width: T,
-    height: T
+    height: T,
 }
 impl<T: std::fmt::Debug> Size<T> {
     fn new(width: T, height: T) -> Size<T> {
         return Size {
-            width: width, height: height
+            width: width,
+            height: height,
         };
     }
     fn as_text(&self) -> String {
@@ -18,23 +19,19 @@ impl<T: std::fmt::Debug> Size<T> {
     }
 }
 
-
-struct Response<T>{
+struct Response<T> {
     body: T,
 }
 
 // debug
-impl <T: std::fmt::Debug> Response<T>{
-    fn new(body: T) -> Response<T>{
-        Response{
-            body
-        }
+impl<T: std::fmt::Debug> Response<T> {
+    fn new(body: T) -> Response<T> {
+        Response { body }
     }
 
     fn as_text(&self) -> String {
         return format!("{:?}", self.body);
     }
-
 }
 
 impl<T: ToPrimitive> Response<T> {
@@ -43,16 +40,16 @@ impl<T: ToPrimitive> Response<T> {
     }
 }
 
-impl <T: Default> Response<T>{
-    fn new_empty() -> Response<T>{
-        Response{
-            body: Default::default()
+impl<T: Default> Response<T> {
+    fn new_empty() -> Response<T> {
+        Response {
+            body: Default::default(),
         }
     }
 }
 
 // new
-impl <T> Response<T>{
+impl<T> Response<T> {
     fn set_body(&mut self, body: T) {
         self.body = body;
     }
@@ -62,9 +59,7 @@ impl <T> Response<T>{
     }
 }
 
-
 pub(crate) fn test() {
-
     let size_int = Size::new(5, 8);
     let text_int = size_int.as_text();
     //text_int is "[5; 8]"
@@ -73,12 +68,9 @@ pub(crate) fn test() {
     //text_float is "[3.7; 1.58]"
     println!("text_int is {text_int}");
     println!("text_float is {text_float}");
-
 }
 
-
 pub fn test1() {
-
     //str test
     let response = Response::new("Hello".to_string());
     let text = response.as_text();
@@ -104,6 +96,4 @@ pub fn test1() {
     let text = response.as_int();
     //text is "8"
     println!("text is {:?}", text);
-
-
 }

@@ -1,8 +1,6 @@
 use std::collections::HashMap;
 pub(crate) fn test() {
-    let dic = HashMap::from([
-        (3, "three"), (4, "four")
-    ]);
+    let dic = HashMap::from([(3, "three"), (4, "four")]);
     let three = dic[&3];
     //three is "three"
     let four = dic.get(&4);
@@ -12,5 +10,4 @@ pub(crate) fn test() {
     println!("three is '{:?}'", three);
     println!("four is {:?}", four);
     println!("five is {:?}", five);
-
 }

@@ -8,14 +8,13 @@ impl Calc {
         for i in values {
             sum += i;
         }
-        return (sum as f32)/(values.len() as f32);
+        return (sum as f32) / (values.len() as f32);
     }
 }
 
 pub(crate) fn test() {
-    let array = [1,2,3,4];
+    let array = [1, 2, 3, 4];
     let avg = Calc::get_avg(&array);
     //avg is 2.5
     println!("avg is {avg}");
-
 }

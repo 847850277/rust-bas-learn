@@ -1,7 +1,6 @@
 pub(crate) fn test() {
     let name = "Alex";
-    let name_exists = name
-        .chars().count() > 1;
+    let name_exists = name.chars().count() > 1;
     //name exists is true
 
     let number = 7;
@@ -10,5 +9,4 @@ pub(crate) fn test() {
 
     println!("name_exists is {name_exists}");
     println!("is_ten is {is_ten}");
-
 }

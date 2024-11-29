@@ -1,5 +1,5 @@
 pub(crate) fn test() {
-    let n1= Some(42);
+    let n1 = Some(42);
     let exists1 = n1.is_some();
     //exists1 is true
 
@@ -13,5 +13,4 @@ pub(crate) fn test() {
     println!("exists1 is {exists1}");
     println!("exists2 is {exists2}");
     println!("not_exists is {not_exists}");
-
 }

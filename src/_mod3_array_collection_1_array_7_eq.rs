@@ -8,5 +8,4 @@ pub(crate) fn test() {
     //equal2 is false
     println!("equal1 is {equal1}");
     println!("equal2 is {equal2}");
-
 }

@@ -6,5 +6,4 @@ pub(crate) fn test() {
     }
     //sum is 77
     println!("sum is {sum}");
-
 }

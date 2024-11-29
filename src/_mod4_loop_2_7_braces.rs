@@ -1,7 +1,7 @@
 pub(crate) fn test() {
     let mut i: i32 = 0;
     loop {
-        i+=1;
+        i += 1;
         println!("{i}^3 = {}", i.pow(3));
         if i == 5 {
             break;
@@ -12,5 +12,4 @@ pub(crate) fn test() {
     // 3^3 = 27
     // 4^3 = 64
     // 5^3 = 125
-
 }

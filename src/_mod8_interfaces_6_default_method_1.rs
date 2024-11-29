@@ -5,8 +5,7 @@ trait Text {
 }
 trait Html {
     fn as_html(&self) -> String {
-        return "<span>html</span>"
-            .to_string();
+        return "<span>html</span>".to_string();
     }
 }
 struct TextHtml;
@@ -14,8 +13,7 @@ impl Text for TextHtml {}
 impl Html for TextHtml {}
 
 pub(crate) fn test() {
-
-    let t_html = TextHtml{};
+    let t_html = TextHtml {};
     let text = &t_html as &dyn Text;
     let s_text = text.as_text();
     //s_text is "text"
@@ -24,5 +22,4 @@ pub(crate) fn test() {
     //html is "<span>html</span>"
     println!("text is '{s_text}'");
     println!("html is '{s_html}'");
-
 }

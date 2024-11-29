@@ -2,7 +2,6 @@ use std::thread;
 use std::time::Duration;
 
 pub(crate) fn test() {
-
     let handle = thread::spawn(|| {
         let result = add(3, 5);
         println!("result: {}", result);
@@ -12,7 +11,6 @@ pub(crate) fn test() {
     //output:
     //main thread
     //result: 8
-
 }
 
 fn add(a: i32, b: i32) -> i32 {

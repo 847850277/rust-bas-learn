@@ -21,5 +21,4 @@ pub(crate) fn test() {
     println!("s1 is {:?}", s1);
     println!("n4 is {:?}", n4);
     println!("n5 is {:?}", n5);
-
 }

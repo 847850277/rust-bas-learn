@@ -12,8 +12,7 @@ impl Shape for Square {
 }
 
 pub(crate) fn test() {
-
-    let square = Square{};
+    let square = Square {};
     square.fill("Red");
     //Use Square fill implementation
     Shape::fill(&square, "Red");
@@ -21,5 +20,4 @@ pub(crate) fn test() {
     let shape = &square as &dyn Shape;
     shape.fill("Red");
     //Use Square fill implementation
-
 }

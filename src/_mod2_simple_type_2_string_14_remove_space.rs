@@ -4,5 +4,4 @@ pub(crate) fn test() {
     //trimStr is "Spaces"
 
     println!("trim_str is \"{trim_str}\"");
-
 }

@@ -12,5 +12,4 @@ pub(crate) fn test() {
     if data_string.ends_with("search") {
         println!("dataString ends with \"search\"");
     }
-
 }

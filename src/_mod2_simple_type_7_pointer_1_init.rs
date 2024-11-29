@@ -12,5 +12,4 @@ pub(crate) fn test() {
     println!("char_a is {:?}", char_a);
     println!("has_value is {:?}", has_value);
     println!("no_value is {:?}", no_value);
-
 }

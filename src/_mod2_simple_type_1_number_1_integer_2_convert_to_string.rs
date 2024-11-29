@@ -16,5 +16,4 @@ pub fn test() {
     dbg!(s1);
     dbg!(s2);
     dbg!(s3);
-
 }

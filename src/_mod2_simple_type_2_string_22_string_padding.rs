@@ -16,5 +16,4 @@ pub(crate) fn test() {
     println!("pad_start2 is '{pad_start2}'");
     println!("pad_end1 is '{pad_end1}'");
     println!("pad_end2 is '{pad_end2}'");
-
 }

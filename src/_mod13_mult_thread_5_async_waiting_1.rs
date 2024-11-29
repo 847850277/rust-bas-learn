@@ -1,6 +1,6 @@
+use futures::executor;
 use std::thread;
 use std::time::Duration;
-use futures::executor;
 pub(crate) fn test() {
     let calc_and_print = async {
         let result = add(2, 9).await;

@@ -4,5 +4,4 @@ pub(crate) fn test() {
     // number_list is "one; two; three"
 
     println!("number_list is \"{number_list}\"");
-
 }

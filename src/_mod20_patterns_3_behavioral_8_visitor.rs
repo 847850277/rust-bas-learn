@@ -12,7 +12,7 @@ impl Element for Engine {
 
 //ConcreteElement
 struct Wheel {
-    number: i8
+    number: i8,
 }
 impl Element for Wheel {
     fn accept(&self, v: &Box<dyn CarVisitor>) {
@@ -22,16 +22,18 @@ impl Element for Wheel {
 
 //ConcreteElement
 struct Car {
-    items: Vec<Box<dyn Element>>
+    items: Vec<Box<dyn Element>>,
 }
 impl Car {
     fn new() -> Car {
         return Car {
-            items: vec![ Box::new(Engine{}),
-                         Box::new(Wheel{ number: 1 }),
-                         Box::new(Wheel{ number: 2 }),
-                         Box::new(Wheel{ number: 3 }),
-                         Box::new(Wheel{ number: 4 })]
+            items: vec![
+                Box::new(Engine {}),
+                Box::new(Wheel { number: 1 }),
+                Box::new(Wheel { number: 2 }),
+                Box::new(Wheel { number: 3 }),
+                Box::new(Wheel { number: 4 }),
+            ],
         };
     }
 }
@@ -84,14 +86,10 @@ impl CarVisitor for RepairCarVisitor {
 }
 
 pub(crate) fn test() {
-
-//Client
+    //Client
     let car = Car::new();
-    let v1: Box<dyn CarVisitor> = Box::new(
-        TestCarVisitor{});
-    let v2: Box<dyn CarVisitor> = Box::new(
-        RepairCarVisitor{});
+    let v1: Box<dyn CarVisitor> = Box::new(TestCarVisitor {});
+    let v2: Box<dyn CarVisitor> = Box::new(RepairCarVisitor {});
     car.accept(&v1);
     car.accept(&v2);
-
 }

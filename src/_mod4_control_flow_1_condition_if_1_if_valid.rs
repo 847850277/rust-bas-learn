@@ -13,8 +13,6 @@ pub(crate) fn test() {
     }
     println!("latitude is {latitude}");
     println!("location is '{location}'");
-
-
 }
 
 fn get_latitude() -> i32 {

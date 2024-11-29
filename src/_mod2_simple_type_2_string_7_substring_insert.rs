@@ -12,5 +12,4 @@ pub(crate) fn test() {
     data_string.insert_str(9, " inserting");
     //data_string is "Substring inserting!"
     println!("data_string is \"{data_string}\"");
-
 }

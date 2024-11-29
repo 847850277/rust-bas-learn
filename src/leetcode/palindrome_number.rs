@@ -4,9 +4,7 @@ pub(crate) fn test() {
     println!("{}", is_palindrome(num));
     num = 123;
     println!("{}", is_palindrome(num));
-
 }
-
 
 pub fn is_palindrome(x: i32) -> bool {
     // parse string

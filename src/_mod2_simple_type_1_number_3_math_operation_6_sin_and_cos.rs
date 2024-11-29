@@ -12,5 +12,4 @@ pub(crate) fn test() {
     println!("sin90 is {sin90}");
     println!("cos180 is {cos180}");
     println!("tan45 is {tan45}");
-
 }

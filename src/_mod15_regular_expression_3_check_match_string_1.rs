@@ -15,5 +15,4 @@ pub(crate) fn test() {
     println!("b1 is {b1}");
     println!("b2 is {b2}");
     println!("b3 is {b3}");
-
 }

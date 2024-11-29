@@ -1,6 +1,5 @@
 use std::collections::HashSet;
 pub(crate) fn test() {
-
     let first = HashSet::from([1, 2]);
     let second = HashSet::from([1, 2]);
     let third = HashSet::from([1, 2, 3]);
@@ -19,5 +18,4 @@ pub(crate) fn test() {
     println!("is_intersects is {is_intersects}");
     println!("is_subset is {is_subset}");
     println!("is_superset is {is_superset}");
-
 }

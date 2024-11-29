@@ -1,5 +1,3 @@
-
-
 #[allow(unused_macros)]
 macro_rules! say_goodby {
     ($a: expr) => {

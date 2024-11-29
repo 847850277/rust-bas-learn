@@ -1,8 +1,7 @@
 struct ArrayAssistant<'a> {
-    data: &'a [i32]
+    data: &'a [i32],
 }
-impl ArrayAssistant<'_>
-{
+impl ArrayAssistant<'_> {
     fn get_first_last(&self) -> (i32, i32) {
         let mut first = -1;
         let mut last = -1;
@@ -16,9 +15,8 @@ impl ArrayAssistant<'_>
 }
 
 pub(crate) fn test() {
-
     let ar = [2, 3, 5];
-    let assistant  = ArrayAssistant{ data: &ar };
+    let assistant = ArrayAssistant { data: &ar };
     let result = assistant.get_first_last();
     //result.first is 2
     //result.last is 5

@@ -6,5 +6,4 @@ pub(crate) fn test() {
     numbers.sort_by(|a, b| b.cmp(a));
     //numbers is [11, 7, 5, 3, 2]
     println!("numbers is {:?}", numbers);
-
 }

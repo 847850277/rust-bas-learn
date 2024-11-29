@@ -1,5 +1,5 @@
 fn make_mult() -> impl Fn(i32, i32) -> i32 {
-    return |a, b| -> i32 {a * b};
+    return |a, b| -> i32 { a * b };
 }
 
 pub(crate) fn test() {
@@ -16,5 +16,4 @@ pub(crate) fn test() {
     // Fn: Closure captures by reference (&T)
     // FnMut: Closure captures by mutable reference (&mut T)
     // FnOnce: Closure captures by value (T)
-
 }

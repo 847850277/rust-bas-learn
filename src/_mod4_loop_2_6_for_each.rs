@@ -7,9 +7,7 @@ pub(crate) fn test() {
     //sum is 58
     println!("sum is {sum}");
     println!();
-    numbers.iter().enumerate()
-        .for_each(|(i, v)| {
-            println!("numbers[{i}] = {v}");
-        });
-
+    numbers.iter().enumerate().for_each(|(i, v)| {
+        println!("numbers[{i}] = {v}");
+    });
 }

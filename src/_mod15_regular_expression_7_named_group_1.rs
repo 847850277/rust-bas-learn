@@ -1,6 +1,5 @@
 use regex::Regex;
 pub(crate) fn test() {
-
     let str_data = "1981|Kim Victorya|engineer";
     let pattern = r"(?<year>\d{4})\|(?<n>[\w\s]+)\|(?<p>.+)";
     let re = Regex::new(pattern).unwrap();
@@ -15,5 +14,4 @@ pub(crate) fn test() {
         println!("name is '{full_name}'");
         println!("position is '{position}'");
     };
-
 }

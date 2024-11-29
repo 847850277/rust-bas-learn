@@ -5,16 +5,11 @@ trait Shape {
 }
 struct Square;
 struct RedSquare;
-impl Shape for Square {
+impl Shape for Square {}
 
-}
-
-impl Shape for RedSquare {
-
-}
+impl Shape for RedSquare {}
 
 pub(crate) fn test() {
-
     let square = Square;
     let red_square = RedSquare;
     let shape = &square as &dyn Shape;
@@ -24,5 +19,4 @@ pub(crate) fn test() {
 
     let red_shape = &red_square as &dyn Shape; // No error now
     red_shape.test();
-
 }

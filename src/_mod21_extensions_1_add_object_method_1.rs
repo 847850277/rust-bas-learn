@@ -11,11 +11,9 @@ impl Point {
 }
 
 pub(crate) fn test() {
-
-    let p1 = Point{x: 1, y: 2};
-    let p2 = Point{x: 2, y: 3};
+    let p1 = Point { x: 1, y: 2 };
+    let p2 = Point { x: 2, y: 3 };
     let distance = p1.distance_to(p2);
     //distance is 1.4142135
     println!("distance is {distance}");
-
 }

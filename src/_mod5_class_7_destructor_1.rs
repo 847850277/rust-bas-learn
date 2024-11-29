@@ -13,8 +13,6 @@ impl Drop for Resources {
 }
 
 pub(crate) fn test() {
-
     let _res = Resources;
     println!("{:?}", _res);
-
 }

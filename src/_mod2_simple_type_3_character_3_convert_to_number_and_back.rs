@@ -10,5 +10,4 @@ pub(crate) fn test() {
     //charB is 'B'
     println!("char_b is '{char_b}'");
     println!("int_value is {int_value}");
-
 }

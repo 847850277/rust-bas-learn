@@ -1,6 +1,5 @@
 use rustils::parse::boolean::string_to_bool;
 pub(crate) fn test() {
-
     let str1 = "true";
     let value1 = str1.to_lowercase() == "true";
     //value1 is true

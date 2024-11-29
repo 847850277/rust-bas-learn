@@ -4,5 +4,4 @@ pub(crate) fn test() {
     let array: [i32; COUNT] = [value; COUNT];
     //array is [5, 5, 5]
     println!("array is {:?}", array);
-
 }

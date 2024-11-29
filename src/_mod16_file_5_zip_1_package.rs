@@ -1,12 +1,11 @@
+use std::fs::File;
 use zip::result::ZipResult;
 use zip::write::{FileOptions, ZipWriter};
-use std::fs::File;
 
 pub(crate) fn test() {
     //[dependencies]
     //zip = "0.6.4"
     main().unwrap();
-
 }
 
 fn main() -> ZipResult<()> {

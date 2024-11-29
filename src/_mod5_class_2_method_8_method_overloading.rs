@@ -1,10 +1,8 @@
-struct foo{
-
-}
+struct foo {}
 
 impl foo {
-    fn show_params<T: ToString>(v:T){
-        println!("v is {}",v.to_string());
+    fn show_params<T: ToString>(v: T) {
+        println!("v is {}", v.to_string());
     }
 }
 pub(crate) fn test() {

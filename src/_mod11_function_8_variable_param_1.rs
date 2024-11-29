@@ -8,5 +8,4 @@ fn print5(mut data: &str) {
 pub(crate) fn test() {
     print5("1234567");
     //printed "12345"
-
 }

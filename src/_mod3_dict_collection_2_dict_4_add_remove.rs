@@ -1,8 +1,6 @@
 use std::collections::HashMap;
 pub(crate) fn test() {
-
-    let mut map = HashMap::from([
-        (1, "one"),  (2, "two")]);
+    let mut map = HashMap::from([(1, "one"), (2, "two")]);
     map.insert(3, "tree");
     //map is {1: "one", 2: "two", 3: "tree"}
     println!("map is {:?}", map);
@@ -15,5 +13,4 @@ pub(crate) fn test() {
     map.clear();
     //map is {}
     println!("map is {:?}", map);
-
 }

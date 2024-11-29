@@ -1,8 +1,8 @@
+use std::fs;
+use std::fs::File;
+use std::io::prelude::*;
 use zip::result::ZipResult;
 use zip::ZipArchive;
-use std::fs::File;
-use std::fs;
-use std::io::prelude::*;
 fn main() -> ZipResult<()> {
     let zip_file = "/Users/zhengpeng/Work/Source/Code/rust-code/rust-bas-learn/file.txt.zip";
     let file = File::open(zip_file)?;

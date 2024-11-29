@@ -7,12 +7,11 @@ impl fmt::Display for SimpleError {
         return write!(f, "Something happened!");
     }
 }
-fn show_error()-> Result<(), SimpleError> {
+fn show_error() -> Result<(), SimpleError> {
     return Err(SimpleError);
 }
 
 pub(crate) fn test() {
-
     if let Err(err) = show_error() {
         println!("{}", err.to_string());
     }

@@ -27,5 +27,4 @@ pub(crate) fn test() {
     println!("more_than is {more_than}");
     println!("compare1 is {:?}", compare1);
     println!("compare2 is {:?}", compare2);
-
 }

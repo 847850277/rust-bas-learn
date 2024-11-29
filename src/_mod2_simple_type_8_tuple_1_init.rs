@@ -7,5 +7,4 @@ pub(crate) fn test() {
 
     println!("number is {number}");
     println!("str_v is '{str_v}'");
-
 }

@@ -38,5 +38,4 @@ pub(crate) fn test() {
     println!("s_octal is {s_octal}");
     println!("s_hex is {s_hex}");
     println!("s_binary is {s_binary}");
-
 }

@@ -25,9 +25,7 @@ impl Shape for Circle {
 }
 
 pub(crate) fn test() {
-
-//Client
-    let circle = Circle{};
+    //Client
+    let circle = Circle {};
     circle.draw();
-
 }

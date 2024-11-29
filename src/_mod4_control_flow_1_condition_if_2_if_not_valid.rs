@@ -4,9 +4,8 @@ pub(crate) fn test() {
     if (latitude == 0) {
         let location = "Equator";
     }
-//Error: no block
-    if latitude == 0{
+    //Error: no block
+    if latitude == 0 {
         let location = "Equator";
     }
-
 }

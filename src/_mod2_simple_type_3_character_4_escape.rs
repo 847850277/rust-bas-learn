@@ -3,25 +3,25 @@ pub(crate) fn test() {
     let c1 = '\'';
 
     // \" for a double quote.
-        let c2 = '\"';
+    let c2 = '\"';
 
     // \\ for a backslash.
-        let c3 = '\\';
+    let c3 = '\\';
 
     // \n for a new line.
-        let c4 = '\n';
+    let c4 = '\n';
 
     // \r for a carriage return.
-        let c5 = '\r';
+    let c5 = '\r';
 
     // \t for a horizontal tab.
-        let c6 = '\t';
+    let c6 = '\t';
 
     // \x for a unicode character hex value.
-        let c7 = '\x41'; // Symbol A
+    let c7 = '\x41'; // Symbol A
 
     // \0 for a null character.
-        let c8 = '\0';
+    let c8 = '\0';
 
     println!("c1 is '{c1}'");
     println!("c2 is '{c2}'");
@@ -31,5 +31,4 @@ pub(crate) fn test() {
     println!("c6 is '{c6}'");
     println!("c7 is '{c7}'");
     println!("c8 is '{c8}'");
-
 }

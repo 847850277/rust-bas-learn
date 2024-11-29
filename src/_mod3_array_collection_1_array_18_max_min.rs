@@ -6,5 +6,4 @@ pub(crate) fn test() {
     //max is Some(11)
     println!("min is {:?}", min);
     println!("max is {:?}", max);
-
 }

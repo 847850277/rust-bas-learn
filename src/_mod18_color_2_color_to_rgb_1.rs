@@ -8,5 +8,4 @@ pub(crate) fn test() {
     println!("green is {green}");
     println!("blue is {blue}");
     println!("alpha is {alpha}");
-
 }

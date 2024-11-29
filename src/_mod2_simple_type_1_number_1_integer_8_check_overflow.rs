@@ -7,5 +7,4 @@ pub(crate) fn test() {
     println!("{}", b1);
     println!("{}", b2);
     println!("{}", b3);
-
 }

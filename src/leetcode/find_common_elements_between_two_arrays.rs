@@ -3,7 +3,6 @@ pub(crate) fn test() {
     todo!()
 }
 
-
 pub fn find_intersection_values(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
     let mut res1 = 0;
     let mut res2 = 0;
@@ -24,5 +23,4 @@ pub fn find_intersection_values(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
         }
     }
     [res1, res2].to_vec()
-
 }

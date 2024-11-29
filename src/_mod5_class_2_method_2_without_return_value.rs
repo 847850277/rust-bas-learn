@@ -1,5 +1,5 @@
 struct Counter {
-    count: i32
+    count: i32,
 }
 
 impl Counter {
@@ -12,14 +12,11 @@ impl Counter {
 }
 
 pub(crate) fn test() {
-
-
-    let mut counter = Counter {count: 0};
+    let mut counter = Counter { count: 0 };
     counter.inc_by(1);
     //counter.count is 1
     println!("count is {}", counter.count);
     counter.inc_by_amount(2, 5);
     //counter.count is 11
     println!("count is {}", counter.count);
-
 }

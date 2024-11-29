@@ -4,6 +4,4 @@ pub(crate) fn test() {
     //int_value is 3
 
     println!("int_value is {int_value}");
-
-
 }

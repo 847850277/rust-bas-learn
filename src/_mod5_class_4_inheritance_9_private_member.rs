@@ -1,7 +1,7 @@
 mod prime {
     pub struct Shape {
         //private field
-        uid: i32
+        uid: i32,
     }
 
     impl Shape {
@@ -14,11 +14,9 @@ mod prime {
     }
 }
 pub(crate) fn test() {
-
     use prime::*;
     let shape = Shape::new();
     //Error: field is private
     //println!("{}", shape.uid);
     println!("{}", shape.get_uid());
-
 }

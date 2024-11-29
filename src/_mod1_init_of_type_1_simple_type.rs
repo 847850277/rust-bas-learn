@@ -1,11 +1,11 @@
-pub fn test(){
+pub fn test() {
     //"const" for constants and
     //"let" for variables
 
     //Int
     let number = 42;
     let other_number = 37;
-    const MAX_INT64 :i64 = i64::MAX;
+    const MAX_INT64: i64 = i64::MAX;
     const MB: i32 = 1_048_576;
     //Double
     const EXP: f64 = 2.71828;
@@ -17,8 +17,7 @@ pub fn test(){
     //String
     let greeting: &str = "Hello";
     //Multiline String
-    let text = "this is some\n".to_owned() +
-        "multiline text";
+    let text = "this is some\n".to_owned() + "multiline text";
 
     //Multiline String
     let multi_line = "this is some\

@@ -1,7 +1,5 @@
 use chrono::*;
 pub(crate) fn test() {
-
-
     let now = chrono::offset::Utc::now();
     let yesterday = now - Duration::days(1);
 
@@ -19,5 +17,4 @@ pub(crate) fn test() {
     println!("are_equal is {are_equal}");
     println!("are_later is {are_later}");
     println!("are_earlier is {are_earlier}");
-
 }

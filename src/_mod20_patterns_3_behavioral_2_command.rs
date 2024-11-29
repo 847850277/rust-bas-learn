@@ -28,7 +28,7 @@ trait Command {
 }
 //ConcreteCommand
 struct PutCommand {
-    bank: Bank
+    bank: Bank,
 }
 impl Command for PutCommand {
     fn execute(&self) {
@@ -36,8 +36,8 @@ impl Command for PutCommand {
     }
 }
 //ConcreteCommand
-struct GetCommand{
-    bank: Bank
+struct GetCommand {
+    bank: Bank,
 }
 impl Command for GetCommand {
     fn execute(&self) {
@@ -45,16 +45,15 @@ impl Command for GetCommand {
     }
 }
 pub(crate) fn test() {
-
-    let bank = Bank{};
-    let c_put = PutCommand{ bank: bank };
-    let c_get = GetCommand{ bank: bank };
+    let bank = Bank {};
+    let c_put = PutCommand { bank: bank };
+    let c_get = GetCommand { bank: bank };
     let client = BankClient {
         put_command: Box::new(c_put),
-        get_command: Box::new(c_get) };
+        get_command: Box::new(c_get),
+    };
     client.get_money();
-//printed: money to the client
+    //printed: money to the client
     client.put_money();
-//printed: money from the client
-
+    //printed: money from the client
 }

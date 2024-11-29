@@ -1,16 +1,13 @@
+use serde::{ser::SerializeStruct, Deserialize, Serialize, Serializer};
+use serde_json_any_key::*;
 use std::collections::{HashMap, HashSet};
 use std::sync::{Arc, RwLock};
-use serde::{Deserialize, Serialize,Serializer,ser::SerializeStruct};
-use serde_json_any_key::*;
-
 
 #[derive(Deserialize, Serialize, Debug, Clone, Eq, PartialEq, Hash, Default)]
-pub struct Connection{
-
+pub struct Connection {
     client_id: String,
     client_addr: String,
     version: i32,
-
 }
 
 #[derive(Debug, PartialEq, Eq, Clone, Serialize, Deserialize)]
@@ -30,7 +27,7 @@ pub struct SubscriptionData {
 }
 
 #[allow(clippy::enum_variant_names)]
-#[derive(Debug, Clone, Copy, Hash, Eq, PartialEq, Default,Serialize,Deserialize)]
+#[derive(Debug, Clone, Copy, Hash, Eq, PartialEq, Default, Serialize, Deserialize)]
 pub enum ConsumeType {
     #[default]
     ConsumeActively,
@@ -54,18 +51,15 @@ impl ConsumerConnection {
         }
     }
 
-
-
     pub fn to_json(&self) -> String {
         serde_json::to_string(&self).unwrap()
     }
-
 }
 
 impl Serialize for ConsumerConnection {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
-        where
-            S: Serializer,
+    where
+        S: Serializer,
     {
         let mut state = serializer.serialize_struct("ConsumerConnection", 3)?;
 
@@ -79,10 +73,7 @@ impl Serialize for ConsumerConnection {
     }
 }
 
-
-pub fn test(){
-
+pub fn test() {
     let consumer_connection = ConsumerConnection::new();
     println!("{}", consumer_connection.to_json());
-
 }

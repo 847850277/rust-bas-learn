@@ -4,5 +4,4 @@ pub(crate) fn test() {
     ar_int[0] = 1;
     //arInt1 is [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     print!("ar_int is {:?}", ar_int);
-
 }

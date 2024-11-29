@@ -3,7 +3,7 @@ trait Car {
     fn stop_engine(&mut self);
 }
 struct SportCar {
-    started: bool
+    started: bool,
 }
 impl Car for SportCar {
     fn start_engine(&mut self) -> bool {
@@ -21,10 +21,7 @@ impl Car for SportCar {
 }
 
 pub(crate) fn test() {
-
-    let mut car = SportCar {
-        started: false };
+    let mut car = SportCar { started: false };
     car.start_engine();
     car.stop_engine();
-
 }

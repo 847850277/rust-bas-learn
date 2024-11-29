@@ -1,5 +1,4 @@
 pub(crate) fn test() {
-
     // \t Insert a tab.
     // \n Insert a newline.
     // \r Insert a carriage return.
@@ -11,6 +10,4 @@ pub(crate) fn test() {
     //str is "She said "Hello!" to me."
 
     println!("str is \"{str}\"");
-
-
 }

@@ -1,5 +1,4 @@
 pub(crate) fn test() {
-
     let mut int_stack = vec![];
     int_stack.push(1);
     int_stack.push(3);
@@ -16,5 +15,4 @@ pub(crate) fn test() {
     println!("first is {:?}", first);
     println!("second is {:?}", second);
     println!("third is {:?}", third);
-
 }

@@ -31,14 +31,13 @@ impl Kitchen {
 }
 
 pub(crate) fn test() {
-
-    let kettle = Kettle{};
-    let toaster = Toaster{};
-    let refrigerator = Refrigerator{};
-    let kitchen = Kitchen{
+    let kettle = Kettle {};
+    let toaster = Toaster {};
+    let refrigerator = Refrigerator {};
+    let kitchen = Kitchen {
         kettle: kettle,
         toaster: toaster,
-        refrigerator: refrigerator };
+        refrigerator: refrigerator,
+    };
     kitchen.off();
-
 }

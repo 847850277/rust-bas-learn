@@ -10,5 +10,4 @@ pub(crate) fn test() {
     }
     //str1 is '7, 5, 3, 2'
     println!("str1 is '{str1}'");
-
 }

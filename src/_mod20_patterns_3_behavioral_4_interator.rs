@@ -1,5 +1,5 @@
 //Iterator
-trait IntIterator  {
+trait IntIterator {
     fn first(&mut self);
     fn next(&mut self);
     fn is_done(&self) -> bool;
@@ -8,7 +8,7 @@ trait IntIterator  {
 //ConcreteIterator
 struct Iterator {
     index: usize,
-    parrent: PrimeNumbers
+    parrent: PrimeNumbers,
 }
 impl IntIterator for Iterator {
     fn first(&mut self) {
@@ -25,22 +25,21 @@ impl IntIterator for Iterator {
     }
 }
 //ConcreteAggregate
-struct  PrimeNumbers {
-    numbers: Vec<i32>
+struct PrimeNumbers {
+    numbers: Vec<i32>,
 }
 impl PrimeNumbers {
     fn get_iterator(self) -> Box<dyn IntIterator> {
         return Box::new(Iterator {
             index: 0,
-            parrent: self
+            parrent: self,
         });
     }
 }
-pub(crate) fn  test() {
-
+pub(crate) fn test() {
     //Client
     let numbers = PrimeNumbers {
-        numbers: vec![2, 3, 5, 7, 11]
+        numbers: vec![2, 3, 5, 7, 11],
     };
     let mut iterator = numbers.get_iterator();
     let mut sum = 0;
@@ -51,5 +50,4 @@ pub(crate) fn  test() {
     }
     //sum is 28
     println!("sum is {sum}");
-
 }

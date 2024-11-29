@@ -8,5 +8,4 @@ pub(crate) fn test() {
     let html_color = format!("{:X}", orange);
     //html_color is #33ff33
     println!(r#"style="color: #{html_color}""#);
-
 }

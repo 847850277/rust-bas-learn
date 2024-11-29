@@ -5,10 +5,8 @@ impl BoldLine {
 }
 
 pub(crate) fn test() {
-
     let line_width = BoldLine::WIDTH;
     //line_width is 10
     //BoldLine::WIDTH = 5; //<-Error
     println!("line_width is {line_width}");
-
 }

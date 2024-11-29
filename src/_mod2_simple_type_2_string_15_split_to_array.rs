@@ -12,5 +12,4 @@ pub(crate) fn test() {
     println!("year is {year}");
     println!("name is \"{name}\"");
     println!("position is \"{position}\"");
-
 }

@@ -11,12 +11,11 @@ pub(crate) fn test() {
     for c in s.chars() {
         char_list.push(c);
         char_list.push(';');
-    };
+    }
     //char_list is "A;B;C;"
 
     println!("char_a is '{char_a}'");
     println!("char_b is '{char_b}'");
     println!("char_c is '{char_c}'");
     println!("char_list is '{char_list}'");
-
 }

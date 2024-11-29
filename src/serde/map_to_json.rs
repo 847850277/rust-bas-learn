@@ -8,9 +8,9 @@ use serde_json;
 use serde_json_any_key::*;
 
 pub(crate) fn test() {
-   // init DedupTree
+    // init DedupTree
     let tree = DedupTree::new();
-   // insert value to DedupTree
+    // insert value to DedupTree
     let mut tree = DedupTree::new();
     let path = PathBuf::from("test");
     let hash = [0; 32];
@@ -21,7 +21,6 @@ pub(crate) fn test() {
     // convert json to DedupTree
     let tree = DedupTree::from_json(&json).unwrap();
     println!("{:?}", tree);
-
 }
 
 pub(crate) fn test_2() {
@@ -40,8 +39,6 @@ pub(crate) fn test_2() {
     //let table: TopicStatsTable = serde_json::from_str(&json).unwrap();
 }
 
-
-
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct DedupTree {
     #[serde(with = "any_key_map")]
@@ -50,8 +47,7 @@ pub struct DedupTree {
     file_tree: BTreeMap<PathBuf, [u8; 32]>,
 }
 
-
-#[derive(Debug, Clone, Default,Deserialize, Serialize)]
+#[derive(Debug, Clone, Default, Deserialize, Serialize)]
 pub struct TopicStatsTable {
     #[serde(with = "any_key_map")]
     offset_table: HashMap<MessageQueue, TopicOffset>,
@@ -64,9 +60,7 @@ impl TopicStatsTable {
             offset_table: HashMap::new(),
         }
     }
-
 }
-
 
 #[derive(Debug, Clone, Hash, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 pub struct MessageQueue {
@@ -83,7 +77,6 @@ impl MessageQueue {
             queue_id: 0,
         }
     }
-
 }
 
 impl fmt::Display for MessageQueue {
@@ -113,8 +106,6 @@ impl TopicOffset {
     }
 }
 
-
-
 impl DedupTree {
     pub fn to_json(&self) -> String {
         serde_json::to_string(&self).unwrap()
@@ -131,4 +122,3 @@ impl DedupTree {
         }
     }
 }
-

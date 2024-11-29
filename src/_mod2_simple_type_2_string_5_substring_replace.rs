@@ -7,5 +7,4 @@ pub(crate) fn test() {
     // start_string = "three, two, one, go!"
 
     print!("start_string is \"{start_string}\"");
-
 }

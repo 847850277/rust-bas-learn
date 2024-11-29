@@ -12,7 +12,7 @@ impl Shape for Square {
 }
 //Decorator
 struct ShapeDecorator {
-    shape: Box<dyn Shape>
+    shape: Box<dyn Shape>,
 }
 impl Shape for ShapeDecorator {
     //Operation()
@@ -23,7 +23,7 @@ impl Shape for ShapeDecorator {
 //ConcreteDecorator
 struct ColorShap {
     shape: Box<dyn Shape>,
-    color: String
+    color: String,
 }
 impl Shape for ColorShap {
     //Operation()
@@ -32,8 +32,8 @@ impl Shape for ColorShap {
         self.shape.show_info();
     }
 }
-struct ShadowShape  {
-    shape: Box<dyn Shape>
+struct ShadowShape {
+    shape: Box<dyn Shape>,
 }
 impl Shape for ShadowShape {
     //Operation()
@@ -44,7 +44,6 @@ impl Shape for ShadowShape {
 }
 
 pub(crate) fn test() {
-
     //Client
     let square = Square {};
     square.show_info();
@@ -52,13 +51,14 @@ pub(crate) fn test() {
     println!();
     let color_shape = ColorShap {
         shape: Box::new(square),
-        color: String::from("red") };
+        color: String::from("red"),
+    };
     color_shape.show_info();
     //printed: red square
     println!();
-    let shadow_shape = ShadowShape{
-        shape: Box::new(color_shape) };
+    let shadow_shape = ShadowShape {
+        shape: Box::new(color_shape),
+    };
     shadow_shape.show_info();
     //printed: red square with shadow›
-
 }

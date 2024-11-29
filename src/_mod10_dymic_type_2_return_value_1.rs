@@ -9,7 +9,6 @@ fn dynamic_return(i: i8) -> Box<dyn Any> {
 }
 
 pub(crate) fn test() {
-
     let mut pi = dynamic_return(1);
     //pi is 3.14
     let mut s = dynamic_return(2);
@@ -19,5 +18,4 @@ pub(crate) fn test() {
     println!("pi is {:?}", pi.downcast_mut::<f64>());
     println!("s is {:?}", s.downcast_mut::<&str>());
     println!("b is {:?}", b.downcast_mut::<bool>());
-
 }

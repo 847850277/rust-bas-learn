@@ -7,5 +7,4 @@ pub(crate) fn test() {
     }
     //f5 is 120
     println!("f5 is {f5}");
-
 }

@@ -1,8 +1,6 @@
 use std::collections::HashMap;
 pub(crate) fn test() {
-
-    let dic = HashMap::from([
-        (1, Some("one")),  (2, None)]);
+    let dic = HashMap::from([(1, Some("one")), (2, None)]);
     let exists1 = dic.get(&1) != None;
     //exists1 is true
     let exists2 = dic.contains_key(&2);
@@ -12,5 +10,4 @@ pub(crate) fn test() {
     println!("exists1 is '{exists1}'");
     println!("exists2 is '{exists2}'");
     println!("exists3 is '{exists3}'");
-
 }

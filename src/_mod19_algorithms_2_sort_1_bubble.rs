@@ -13,9 +13,8 @@ fn sort(items: &mut [i32]) {
     }
 }
 
-pub(crate) fn  test() {
-
-    let mut nums = [ 4, 1, 5, 3, 2  ];
+pub(crate) fn test() {
+    let mut nums = [4, 1, 5, 3, 2];
     sort(&mut nums);
     // sortItems is {1, 2, 3, 4, 5}
     println!("nums is {:?}", nums);
@@ -34,9 +33,7 @@ pub(crate) fn  test() {
     }
     let now = chrono::offset::Utc::now();
     let delta: Duration = now - start;
-    println!("milliseconds is {}",
-             delta.num_milliseconds());
+    println!("milliseconds is {}", delta.num_milliseconds());
     println!("items is {:?}", items);
-// about 539 milliseconds
-
+    // about 539 milliseconds
 }

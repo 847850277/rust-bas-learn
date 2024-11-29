@@ -19,5 +19,4 @@ pub(crate) fn test() {
     println!("d4 is {d4}");
     println!("d5 is {d5}");
     println!("d6 is {d6}");
-
 }

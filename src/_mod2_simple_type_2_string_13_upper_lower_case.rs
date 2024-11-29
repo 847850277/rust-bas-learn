@@ -22,9 +22,7 @@ pub(crate) fn test() {
         // c.next 表示当前第一个字符串
         match c.next() {
             None => String::new(),
-            Some(f) => f.to_uppercase()
-                .collect::<String>() + c.as_str(),
+            Some(f) => f.to_uppercase().collect::<String>() + c.as_str(),
         }
     }
-
 }

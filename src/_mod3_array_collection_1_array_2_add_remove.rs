@@ -25,5 +25,4 @@ pub(crate) fn test() {
     numbers.clear();
     //primeNumbers is []
     print!("{:?}", numbers);
-
 }

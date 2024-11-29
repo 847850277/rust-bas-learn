@@ -18,14 +18,12 @@ impl PartialOrd<Point> for Point {
 }
 
 pub(crate) fn test() {
-
-    let p1 = Point{ x: 1, y: 2 };
-    let p2 = Point{ x: 2, y: 3 };
+    let p1 = Point { x: 1, y: 2 };
+    let p2 = Point { x: 2, y: 3 };
     let b1 = p1 > p2;
     //b1 is false
     let b2 = p1 < p2;
     //b2 is true
     println!("b1 is {b1}");
     println!("b2 is {b2}");
-
 }

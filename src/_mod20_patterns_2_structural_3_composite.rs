@@ -18,7 +18,7 @@ impl Graphic for Square {
 }
 //Composite
 struct Image {
-    graphics: Vec<Box<dyn Graphic>>
+    graphics: Vec<Box<dyn Graphic>>,
 }
 impl Graphic for Image {
     fn draw(&self) {
@@ -39,13 +39,11 @@ impl Image {
 }
 
 pub(crate) fn test() {
-
-//Client
+    //Client
     let mut image = Image { graphics: vec![] };
-    image.add(Box::new(Circle{}));
-    image.add(Box::new(Square{}));
+    image.add(Box::new(Circle {}));
+    image.add(Box::new(Square {}));
     let mut picture = Image { graphics: vec![] };
     picture.add(Box::new(image));
     picture.draw();
-
 }

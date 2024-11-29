@@ -19,17 +19,14 @@ macro_rules! treemap {
 struct F32Bits(u32);
 impl Serialize for F32Bits {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
-        where
-            S: Serializer,
+    where
+        S: Serializer,
     {
         serializer.serialize_f32(f32::from_bits(self.0))
     }
 }
 
-
-pub fn test(){
-
-
+pub fn test() {
     // We store float bits so that we can derive Ord, and other traits. In a
     // real context the code might involve a crate like ordered-float.
 
@@ -46,5 +43,4 @@ pub fn test(){
     let map = treemap!(F32Bits(f32::NAN.to_bits()) => "x".to_owned());
     assert!(serde_json::to_string(&map).is_err());
     assert!(serde_json::to_value(map).is_err());
-
 }

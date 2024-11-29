@@ -1,5 +1,5 @@
 struct Man<'a> {
-    name: &'a str
+    name: &'a str,
 }
 impl<'a> Man<'_> {
     fn new(name: &'a str) -> Man<'a> {
@@ -8,14 +8,13 @@ impl<'a> Man<'_> {
 }
 struct Employee<'a> {
     parent: Man<'a>,
-    position: &'a str
+    position: &'a str,
 }
 impl<'a> Employee<'a> {
-    fn new(name: &'a str,
-           position: &'a str) -> Employee<'a> {
+    fn new(name: &'a str, position: &'a str) -> Employee<'a> {
         return Employee {
             parent: Man::new(name),
-            position: position
+            position: position,
         };
     }
     fn name(&self) -> &'a str {
@@ -24,7 +23,6 @@ impl<'a> Employee<'a> {
 }
 
 pub(crate) fn test() {
-
     let employee = Employee::new("Max", "booker");
     //employee.name() is "Max"
     println!("name is '{}'", employee.name());

@@ -30,8 +30,7 @@ fn main() -> std::io::Result<()> {
     let file_dir = path.parent().unwrap();
     println!("file_size is {}", file_size);
     let datetime: DateTime<Utc> = date_changes.into();
-    println!("date_changes is {}", datetime
-        .format("%Y-%m-%d"));
+    println!("date_changes is {}", datetime.format("%Y-%m-%d"));
     println!("creation_date is {:?}", creation_date);
     println!("is_readonly is {}", is_readonly);
     println!("extension is {:?}", extension);

@@ -9,5 +9,4 @@ pub(crate) fn test() {
     for (i, c) in str.chars().enumerate() {
         println!("str[{i}] = {c};");
     }
-
 }

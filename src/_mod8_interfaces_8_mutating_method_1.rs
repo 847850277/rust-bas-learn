@@ -1,5 +1,5 @@
 struct Mode {
-    value: u8
+    value: u8,
 }
 trait Chain {
     fn next(&mut self);
@@ -10,12 +10,10 @@ impl Chain for Mode {
     }
 }
 pub(crate) fn test() {
-
-    let mut mode = Mode{ value: 2 };
+    let mut mode = Mode { value: 2 };
     mode.next();
     println!("mode is {:?}", mode.value);
     mode.next();
     //mode is 0
     println!("mode is {:?}", mode.value);
-
 }

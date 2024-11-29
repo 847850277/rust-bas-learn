@@ -6,6 +6,4 @@ pub(crate) fn test() {
     get_sum(&mut sum, 5, 3);
     //sum is 8
     println!("sum is {sum}");
-
-
 }

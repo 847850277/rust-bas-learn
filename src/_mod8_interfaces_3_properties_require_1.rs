@@ -14,10 +14,7 @@ impl Car for Airwave {
 }
 
 pub(crate) fn test() {
-
-    let car = Airwave{};
-    println!("engine_volume is {}",
-             car.get_engine_volume());
+    let car = Airwave {};
+    println!("engine_volume is {}", car.get_engine_volume());
     println!("name is '{}'", car.get_name());
-
 }

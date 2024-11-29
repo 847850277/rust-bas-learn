@@ -1,5 +1,5 @@
 struct Man {
-    name: String
+    name: String,
 }
 impl Man {
     fn new(name: String) -> Man {
@@ -8,13 +8,13 @@ impl Man {
 }
 struct Employee {
     parent: Man,
-    position: String
+    position: String,
 }
 impl Employee {
     fn new(name: String) -> Employee {
         return Employee {
             parent: Man::new(name),
-            position: String::from("unknown")
+            position: String::from("unknown"),
         };
     }
     fn name(&self) -> &String {
@@ -23,9 +23,7 @@ impl Employee {
 }
 
 pub(crate) fn test() {
-
-    let employee = Employee::new(
-        String::from("Max"));
+    let employee = Employee::new(String::from("Max"));
     //employee.name() is "Max"
     println!("name is '{}'", employee.name());
     println!("position is '{}'", employee.position);

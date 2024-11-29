@@ -9,8 +9,11 @@ impl Vehicle for Car {
         println!("Test car");
     }
 }
-struct Service<T> where T: Vehicle {
-    list: Vec<T>
+struct Service<T>
+where
+    T: Vehicle,
+{
+    list: Vec<T>,
 }
 impl<T: Vehicle> Service<T> {
     fn add(&mut self, item: T) {
@@ -24,10 +27,8 @@ impl<T: Vehicle> Service<T> {
 }
 
 pub(crate) fn test() {
-
-    let mut service = Service{list: vec![]};
-    service.add(Car{});
+    let mut service = Service { list: vec![] };
+    service.add(Car {});
     service.test()
     //service.add(Truck{}); //<-Error
-
 }

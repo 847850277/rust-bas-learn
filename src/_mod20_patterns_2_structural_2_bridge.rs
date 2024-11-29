@@ -4,7 +4,7 @@ trait Text {
 }
 //RefinedAbstraction
 struct TextMaker {
-    text_imp: Box<dyn ImplText>
+    text_imp: Box<dyn ImplText>,
 }
 impl Text for TextMaker {
     fn get_text(&self) -> String {
@@ -21,7 +21,7 @@ trait ImplText {
 }
 //ConcreteImplementator
 struct TextBuilder {
-    rows: String
+    rows: String,
 }
 impl ImplText for TextBuilder {
     fn get_string(&self) -> String {
@@ -34,7 +34,7 @@ impl ImplText for TextBuilder {
 }
 //ConcreteImplementator
 struct HtmlBuilder {
-    rows: String
+    rows: String,
 }
 impl ImplText for HtmlBuilder {
     fn get_string(&self) -> String {
@@ -48,24 +48,23 @@ impl ImplText for HtmlBuilder {
 }
 //Client
 fn fill_text_builder(text_imp: Box<dyn ImplText>) -> String {
-    let mut text_maker = TextMaker {
-        text_imp: text_imp };
+    let mut text_maker = TextMaker { text_imp: text_imp };
     text_maker.add_line("line 1");
     text_maker.add_line("line 2");
     return text_maker.get_text();
 }
 
 pub(crate) fn test() {
-
-    let text = fill_text_builder(
-        Box::new(TextBuilder{ rows: String::new() }));
+    let text = fill_text_builder(Box::new(TextBuilder {
+        rows: String::new(),
+    }));
     //text: line 1
     //      line 2
     println!("text:\n{text}");
-    let html = fill_text_builder(
-        Box::new(HtmlBuilder{ rows: String::new() }));
+    let html = fill_text_builder(Box::new(HtmlBuilder {
+        rows: String::new(),
+    }));
     //text: line 1
     //      line 2
     println!("html:\n{html}");
-
 }

@@ -1,7 +1,9 @@
 pub(crate) fn test() {
-    let make_wallet = |mut sum| move |pay| {
-        sum -= pay;
-        return sum;
+    let make_wallet = |mut sum| {
+        move |pay| {
+            sum -= pay;
+            return sum;
+        }
     };
     let sum1 = 1000;
     let mut pay_from_wallet1 = make_wallet(sum1);
@@ -16,5 +18,4 @@ pub(crate) fn test() {
     balance = pay_from_wallet1(150);
     //balance is 800
     println!("balance is {balance}");
-
 }

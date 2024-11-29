@@ -22,5 +22,4 @@ pub(crate) fn test() {
     println!("value_and is {value_and}");
     println!("value_or is {value_or}");
     println!("value_xor is {value_xor}");
-
 }

@@ -1,6 +1,5 @@
 use regex::Regex;
 pub(crate) fn test() {
-
     let data = "AaaA\n\raaaA";
     let pattern = r"^a+$";
     let re = Regex::new(pattern).unwrap();
@@ -9,5 +8,4 @@ pub(crate) fn test() {
     } else {
         println!("No match found");
     }
-
 }

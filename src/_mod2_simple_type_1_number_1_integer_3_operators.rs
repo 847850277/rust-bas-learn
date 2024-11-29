@@ -1,15 +1,14 @@
 pub fn test() {
-
-    let d1 = 8 + 2;  //d1 is 10
-    let d2 = 8 - 2;  //d2 is 6
-    let d3 = 8 * 2;  //d3 is 16
-    let d4 = 8 / 2;  //d4 is 4
-    let d5 = 5 % 2;  //d5 is 1
+    let d1 = 8 + 2; //d1 is 10
+    let d2 = 8 - 2; //d2 is 6
+    let d3 = 8 * 2; //d3 is 16
+    let d4 = 8 / 2; //d4 is 4
+    let d5 = 5 % 2; //d5 is 1
     let d6 = -5 % 2; //d6 is -1
     let mut d7 = 1;
-    d7 += 1;         //d7 is 2
+    d7 += 1; //d7 is 2
     dbg!(d7);
-    d7 -= 1;         //d7 is 1
+    d7 -= 1; //d7 is 1
     dbg!(d7);
     let (d8, d7) = (d7, d7 + 1);
     //d8 is 1, d7 is 2
@@ -35,5 +34,4 @@ pub fn test() {
     dbg!(d7);
     dbg!(d8);
     dbg!(d9);
-
 }

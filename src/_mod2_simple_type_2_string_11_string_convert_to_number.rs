@@ -17,14 +17,11 @@ pub(crate) fn test() {
 
     //the third method
     let str_half = "0,5";
-    let half = str_half
-        .replace(",", ".")
-        .parse::<f32>().unwrap();
+    let half = str_half.replace(",", ".").parse::<f32>().unwrap();
 
     println!("number1 is {number1}");
     println!("number2 is {number2}");
     println!("pi is {pi}");
     println!("exp is {exp}");
     println!("half is {half}");
-
 }

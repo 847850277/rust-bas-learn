@@ -1,10 +1,10 @@
 use std::io::ErrorKind;
 struct Car {}
 struct Seller {
-    cars: Vec<Car>
+    cars: Vec<Car>,
 }
 impl Seller {
-    fn sell(&self)-> Result<(), ErrorKind> {
+    fn sell(&self) -> Result<(), ErrorKind> {
         if self.cars.len() == 0 {
             return Err(ErrorKind::NotFound);
         }
@@ -13,8 +13,7 @@ impl Seller {
     }
 }
 pub(crate) fn test() {
-
-    let seller = Seller {cars: vec![]};
+    let seller = Seller { cars: vec![] };
     if let Err(_err) = seller.sell() {
         println!("No cars for sale");
     }
@@ -25,5 +24,4 @@ pub(crate) fn test() {
         Ok(_) => println!("Car sold successfully"),
         Err(e) => println!("Error selling car: {:?}", e),
     }
-
 }

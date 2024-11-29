@@ -6,5 +6,4 @@ pub(crate) fn test() {
     let sum = get_sum(5, 3);
     //sum is 8
     println!("sum is {sum}");
-
 }

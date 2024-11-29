@@ -1,4 +1,76 @@
-mod leetcode;
+mod _mod10_dymic_type_1_init_1;
+mod _mod10_dymic_type_2_return_value_1;
+mod _mod11_function_10_recursion_1;
+mod _mod11_function_1_return_value_1;
+mod _mod11_function_2_with_out_return_value_1;
+mod _mod11_function_3_mult_return_value_1;
+mod _mod11_function_4_with_out_param_1;
+mod _mod11_function_5_array_param_1;
+mod _mod11_function_6_out_array_param_1;
+mod _mod11_function_7_in_out_array_param_1;
+mod _mod11_function_8_variable_param_1;
+mod _mod11_function_9_optional_param_1;
+mod _mod12_lambda_10_currying_1;
+mod _mod12_lambda_11_recursion_1;
+mod _mod12_lambda_12_memoization_1;
+mod _mod12_lambda_1_one_param_1;
+mod _mod12_lambda_2_mult_param_1;
+mod _mod12_lambda_3_with_out_return_value_1;
+mod _mod12_lambda_4_function_as_param_1;
+mod _mod12_lambda_5_void_function_as_param_1;
+mod _mod12_lambda_6_function_as_return_value_1;
+mod _mod12_lambda_7_mult_operators_1;
+mod _mod12_lambda_8_capture_variables_1;
+mod _mod12_lambda_9_modify_capture_variables_1;
+mod _mod13_mult_thread_1_start_1;
+mod _mod13_mult_thread_2_start_waiting_1;
+mod _mod13_mult_thread_3_async_call_1;
+mod _mod13_mult_thread_4_sync_blocking_1;
+mod _mod13_mult_thread_5_async_waiting_1;
+mod _mod13_mult_thread_6_passing_variables_1;
+mod _mod14_exception_10_throw_panic_1;
+mod _mod14_exception_1_catch_all_exception_1;
+mod _mod14_exception_2_catch_specific_exception_1;
+mod _mod14_exception_3_throw_exception_1;
+mod _mod14_exception_4_re_throw_exception_1;
+mod _mod14_exception_5_define_exception_type_1;
+mod _mod14_exception_6_guaranteed_code_exception_1;
+mod _mod14_exception_7_if_no_exception_occurred_1;
+mod _mod14_exception_8_method_throw_exception_1;
+mod _mod14_exception_9_throw_expression_1;
+mod _mod15_regular_expression_1_search_a_match_1;
+mod _mod15_regular_expression_2_search_all_match_1;
+mod _mod15_regular_expression_3_check_match_string_1;
+mod _mod15_regular_expression_4_check_match_hole_string_1;
+mod _mod15_regular_expression_5_replace_match_1;
+mod _mod15_regular_expression_6_replace_using_function_1;
+mod _mod15_regular_expression_7_named_group_1;
+mod _mod15_regular_expression_8_reg_expression_option_1;
+mod _mod16_file_1_basic_10_copy_directory;
+mod _mod16_file_1_basic_11_list_file_of_directory;
+mod _mod16_file_1_basic_1_exist;
+mod _mod16_file_1_basic_2_delete_file;
+mod _mod16_file_1_basic_3_file_copying;
+mod _mod16_file_1_basic_4_file_move;
+mod _mod16_file_1_basic_5_getting_file_properties;
+mod _mod16_file_1_basic_6_getting_working_directory;
+mod _mod16_file_1_basic_7_create_directory;
+mod _mod16_file_1_basic_8_delete_directory;
+mod _mod16_file_1_basic_9_delete_directory_with_data;
+mod _mod16_file_2_text_file_1_read;
+mod _mod16_file_2_text_file_2_read_line;
+mod _mod16_file_2_text_file_3_write_file;
+mod _mod16_file_2_text_file_4_append_text_to_file;
+mod _mod16_file_3_binary_1_read;
+mod _mod16_file_3_binary_2_write;
+mod _mod16_file_3_binary_3_buffer_read_write;
+mod _mod16_file_3_binary_4_write_array_to_file;
+mod _mod16_file_3_binary_5_read_array_from_file;
+mod _mod16_file_3_binary_6_write_dictionary_to_file;
+mod _mod16_file_3_binary_7_read_dictitonary_from_file;
+mod _mod16_file_4_xml_1_read;
+mod _mod16_file_4_xml_2_write;
+mod _mod16_file_5_zip_1_package;
 mod _mod1_init_of_type_1_simple_type;
 mod _mod1_init_of_type_2_enum_type;
 mod _mod1_init_of_type_3_collection_type_1_array;
@@ -31,15 +103,6 @@ mod _mod2_simple_type_1_number_3_math_operation_3_max_or_min;
 mod _mod2_simple_type_1_number_3_math_operation_4_log;
 mod _mod2_simple_type_1_number_3_math_operation_5_decimal_log;
 mod _mod2_simple_type_1_number_3_math_operation_6_sin_and_cos;
-mod _mod2_simple_type_2_string_1_empty_string;
-mod _mod2_simple_type_2_string_2_character_count;
-mod _mod2_simple_type_2_string_3_string_search;
-mod _mod2_simple_type_2_string_4_substring_index;
-mod _mod2_simple_type_2_string_5_substring_replace;
-mod _mod2_simple_type_2_string_6_getting_substring;
-mod _mod2_simple_type_2_string_7_substring_insert;
-mod _mod2_simple_type_2_string_8_substring_remove;
-mod _mod2_simple_type_2_string_9_string_compare;
 mod _mod2_simple_type_2_string_10_string_interpolation;
 mod _mod2_simple_type_2_string_11_string_convert_to_number;
 mod _mod2_simple_type_2_string_12_string_iter;
@@ -50,10 +113,19 @@ mod _mod2_simple_type_2_string_16_charator_replace;
 mod _mod2_simple_type_2_string_17_replace_mult_charator;
 mod _mod2_simple_type_2_string_18_mult_string_iter;
 mod _mod2_simple_type_2_string_19_string_concate;
+mod _mod2_simple_type_2_string_1_empty_string;
 mod _mod2_simple_type_2_string_20_string_list_concate;
 mod _mod2_simple_type_2_string_21_string_multi;
 mod _mod2_simple_type_2_string_22_string_padding;
 mod _mod2_simple_type_2_string_23_escaping_string;
+mod _mod2_simple_type_2_string_2_character_count;
+mod _mod2_simple_type_2_string_3_string_search;
+mod _mod2_simple_type_2_string_4_substring_index;
+mod _mod2_simple_type_2_string_5_substring_replace;
+mod _mod2_simple_type_2_string_6_getting_substring;
+mod _mod2_simple_type_2_string_7_substring_insert;
+mod _mod2_simple_type_2_string_8_substring_remove;
+mod _mod2_simple_type_2_string_9_string_compare;
 mod _mod2_simple_type_3_character_1_convert_to_string;
 mod _mod2_simple_type_3_character_2_get_from_string;
 mod _mod2_simple_type_3_character_3_convert_to_number_and_back;
@@ -78,15 +150,6 @@ mod _mod2_simple_type_7_pointer_1_init;
 mod _mod2_simple_type_7_pointer_2_check_value;
 mod _mod2_simple_type_7_pointer_3_get_value;
 mod _mod2_simple_type_8_tuple_1_init;
-mod _mod3_array_collection_1_array_1_init;
-mod _mod3_array_collection_1_array_2_add_remove;
-mod _mod3_array_collection_1_array_3_length;
-mod _mod3_array_collection_1_array_4_iter;
-mod _mod3_array_collection_1_array_5_iter_index;
-mod _mod3_array_collection_1_array_6_reverse;
-mod _mod3_array_collection_1_array_7_eq;
-mod _mod3_array_collection_1_array_8_exist;
-mod _mod3_array_collection_1_array_9_sort;
 mod _mod3_array_collection_1_array_10_distinct;
 mod _mod3_array_collection_1_array_11_filter;
 mod _mod3_array_collection_1_array_12_copy;
@@ -97,8 +160,24 @@ mod _mod3_array_collection_1_array_16_default_value;
 mod _mod3_array_collection_1_array_17_part_of_array;
 mod _mod3_array_collection_1_array_18_max_min;
 mod _mod3_array_collection_1_array_19_every_some;
+mod _mod3_array_collection_1_array_1_init;
 mod _mod3_array_collection_1_array_20_dymic;
 mod _mod3_array_collection_1_array_21_compare;
+mod _mod3_array_collection_1_array_2_add_remove;
+mod _mod3_array_collection_1_array_3_length;
+mod _mod3_array_collection_1_array_4_iter;
+mod _mod3_array_collection_1_array_5_iter_index;
+mod _mod3_array_collection_1_array_6_reverse;
+mod _mod3_array_collection_1_array_7_eq;
+mod _mod3_array_collection_1_array_8_exist;
+mod _mod3_array_collection_1_array_9_sort;
+mod _mod3_dict_collection_2_dict_10_filter;
+mod _mod3_dict_collection_2_dict_11_get_value_by_key;
+mod _mod3_dict_collection_2_dict_12_sort_key;
+mod _mod3_dict_collection_2_dict_13_sort_value;
+mod _mod3_dict_collection_2_dict_14_convert_value;
+mod _mod3_dict_collection_2_dict_15_merge;
+mod _mod3_dict_collection_2_dict_16_group;
 mod _mod3_dict_collection_2_dict_1_init;
 mod _mod3_dict_collection_2_dict_2_get_value_by_key;
 mod _mod3_dict_collection_2_dict_3_check_exist;
@@ -108,13 +187,10 @@ mod _mod3_dict_collection_2_dict_6_length;
 mod _mod3_dict_collection_2_dict_7_default_value;
 mod _mod3_dict_collection_2_dict_8_keys;
 mod _mod3_dict_collection_2_dict_9_values;
-mod _mod3_dict_collection_2_dict_10_filter;
-mod _mod3_dict_collection_2_dict_11_get_value_by_key;
-mod _mod3_dict_collection_2_dict_12_sort_key;
-mod _mod3_dict_collection_2_dict_13_sort_value;
-mod _mod3_dict_collection_2_dict_14_convert_value;
-mod _mod3_dict_collection_2_dict_15_merge;
-mod _mod3_dict_collection_2_dict_16_group;
+mod _mod3_iter_collection_4_iter_1_simple;
+mod _mod3_iter_collection_4_iter_2_reverse;
+mod _mod3_queque_collection_5_queque_1;
+mod _mod3_set_collection_3_set_10_hash_sorted;
 mod _mod3_set_collection_3_set_1_init;
 mod _mod3_set_collection_3_set_2_search;
 mod _mod3_set_collection_3_set_3_add_remove;
@@ -124,19 +200,20 @@ mod _mod3_set_collection_3_set_6_filter;
 mod _mod3_set_collection_3_set_7_sort;
 mod _mod3_set_collection_3_set_8_operation;
 mod _mod3_set_collection_3_set_9_convert;
-mod _mod3_set_collection_3_set_10_hash_sorted;
-mod _mod3_iter_collection_4_iter_1_simple;
-mod _mod3_iter_collection_4_iter_2_reverse;
-mod _mod3_queque_collection_5_queque_1;
 mod _mod3_stack_collection_6_stack_1;
 mod _mod4_control_flow_1_condition_if_1_if_valid;
-mod _mod4_control_flow_1_condition_switch_2_1_simple;
 mod _mod4_control_flow_1_condition_if_2_if_not_valid;
 mod _mod4_control_flow_1_condition_if_3_if_complex;
 mod _mod4_control_flow_1_condition_if_4_if_ternary;
+mod _mod4_control_flow_1_condition_switch_2_1_simple;
 mod _mod4_control_flow_1_condition_switch_2_2_different_type;
 mod _mod4_control_flow_1_condition_switch_2_3_case_when;
 mod _mod4_control_flow_1_condition_switch_2_4_tuple;
+mod _mod4_interruption_3_1_continue;
+mod _mod4_interruption_3_2_break;
+mod _mod4_interruption_3_3_return_1;
+mod _mod4_interruption_3_3_return_2;
+mod _mod4_interruption_3_4_label;
 mod _mod4_loop_2_1_simple;
 mod _mod4_loop_2_2_for_in;
 mod _mod4_loop_2_3_for_in_index;
@@ -145,11 +222,8 @@ mod _mod4_loop_2_5_do_while;
 mod _mod4_loop_2_6_for_each;
 mod _mod4_loop_2_7_braces;
 mod _mod4_loop_2_8_death_loop;
-mod _mod4_interruption_3_1_continue;
-mod _mod4_interruption_3_2_break;
-mod _mod4_interruption_3_3_return_1;
-mod _mod4_interruption_3_3_return_2;
-mod _mod4_interruption_3_4_label;
+mod _mod5_class_10_object_clone_1;
+mod _mod5_class_11_type_member_1;
 mod _mod5_class_1_construct_1_default;
 mod _mod5_class_1_construct_2_without_param;
 mod _mod5_class_1_construct_3_with_param;
@@ -183,8 +257,6 @@ mod _mod5_class_6_field_1;
 mod _mod5_class_7_destructor_1;
 mod _mod5_class_8_constants_1;
 mod _mod5_class_9_check_reference_1;
-mod _mod5_class_10_object_clone_1;
-mod _mod5_class_11_type_member_1;
 mod _mod6_structures_1_definition_init_1;
 mod _mod6_structures_2_constructors_1;
 mod _mod6_structures_3_method_1;
@@ -214,79 +286,7 @@ mod _mod9_generic_type_2_generic_class_1;
 mod _mod9_generic_type_3_generic_method_1;
 mod _mod9_generic_type_4_interface_conformity_1;
 mod _mod9_generic_type_5_sub_principle_1;
-mod _mod10_dymic_type_1_init_1;
-mod _mod10_dymic_type_2_return_value_1;
-mod _mod11_function_1_return_value_1;
-mod _mod11_function_2_with_out_return_value_1;
-mod _mod11_function_3_mult_return_value_1;
-mod _mod11_function_4_with_out_param_1;
-mod _mod11_function_5_array_param_1;
-mod _mod11_function_6_out_array_param_1;
-mod _mod11_function_7_in_out_array_param_1;
-mod _mod11_function_8_variable_param_1;
-mod _mod11_function_9_optional_param_1;
-mod _mod11_function_10_recursion_1;
-mod _mod12_lambda_1_one_param_1;
-mod _mod12_lambda_2_mult_param_1;
-mod _mod12_lambda_3_with_out_return_value_1;
-mod _mod12_lambda_4_function_as_param_1;
-mod _mod12_lambda_5_void_function_as_param_1;
-mod _mod12_lambda_6_function_as_return_value_1;
-mod _mod12_lambda_7_mult_operators_1;
-mod _mod12_lambda_8_capture_variables_1;
-mod _mod12_lambda_9_modify_capture_variables_1;
-mod _mod12_lambda_10_currying_1;
-mod _mod12_lambda_11_recursion_1;
-mod _mod12_lambda_12_memoization_1;
-mod _mod13_mult_thread_1_start_1;
-mod _mod13_mult_thread_2_start_waiting_1;
-mod _mod13_mult_thread_3_async_call_1;
-mod _mod13_mult_thread_4_sync_blocking_1;
-mod _mod13_mult_thread_5_async_waiting_1;
-mod _mod13_mult_thread_6_passing_variables_1;
-mod _mod14_exception_1_catch_all_exception_1;
-mod _mod14_exception_2_catch_specific_exception_1;
-mod _mod14_exception_3_throw_exception_1;
-mod _mod14_exception_4_re_throw_exception_1;
-mod _mod14_exception_5_define_exception_type_1;
-mod _mod14_exception_6_guaranteed_code_exception_1;
-mod _mod14_exception_7_if_no_exception_occurred_1;
-mod _mod14_exception_8_method_throw_exception_1;
-mod _mod14_exception_9_throw_expression_1;
-mod _mod14_exception_10_throw_panic_1;
-mod _mod15_regular_expression_1_search_a_match_1;
-mod _mod15_regular_expression_2_search_all_match_1;
-mod _mod15_regular_expression_3_check_match_string_1;
-mod _mod15_regular_expression_4_check_match_hole_string_1;
-mod _mod15_regular_expression_5_replace_match_1;
-mod _mod15_regular_expression_6_replace_using_function_1;
-mod _mod15_regular_expression_7_named_group_1;
-mod _mod15_regular_expression_8_reg_expression_option_1;
-mod _mod16_file_1_basic_1_exist;
-mod _mod16_file_1_basic_2_delete_file;
-mod _mod16_file_1_basic_3_file_copying;
-mod _mod16_file_1_basic_4_file_move;
-mod _mod16_file_1_basic_5_getting_file_properties;
-mod _mod16_file_1_basic_6_getting_working_directory;
-mod _mod16_file_1_basic_7_create_directory;
-mod _mod16_file_1_basic_8_delete_directory;
-mod _mod16_file_1_basic_9_delete_directory_with_data;
-mod _mod16_file_1_basic_10_copy_directory;
-mod _mod16_file_1_basic_11_list_file_of_directory;
-mod _mod16_file_2_text_file_1_read;
-mod _mod16_file_2_text_file_2_read_line;
-mod _mod16_file_2_text_file_3_write_file;
-mod _mod16_file_2_text_file_4_append_text_to_file;
-mod _mod16_file_3_binary_1_read;
-mod _mod16_file_3_binary_2_write;
-mod _mod16_file_3_binary_3_buffer_read_write;
-mod _mod16_file_3_binary_4_write_array_to_file;
-mod _mod16_file_3_binary_5_read_array_from_file;
-mod _mod16_file_3_binary_6_write_dictionary_to_file;
-mod _mod16_file_3_binary_7_read_dictitonary_from_file;
-mod _mod16_file_4_xml_1_read;
-mod _mod16_file_4_xml_2_write;
-mod _mod16_file_5_zip_1_package;
+mod leetcode;
 
 mod _mod16_file_5_zip_2_un_package;
 mod _mod17_operator_overloading_1_unary_1;
@@ -332,17 +332,16 @@ mod _mod21_extensions_1_add_object_method_1;
 mod _mod21_extensions_2_add_type_method_1;
 mod _mod21_extensions_3_add_properties_1;
 mod _mod21_extensions_4_add_initializers_1;
+mod axum_session_sqllite;
 mod reuqest;
 mod rockermq;
-mod starknet;
-mod axum_session_sqllite;
 mod serde;
+mod starknet;
 
 mod r#struct;
 
-mod web;
 mod http_body;
-
+mod web;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
@@ -350,6 +349,7 @@ pub fn add(left: usize, right: usize) -> usize {
 
 #[cfg(test)]
 mod tests {
+    use super::*;
     use crate::leetcode::*;
     use crate::r#struct::people;
     use crate::r#struct::people::People;
@@ -358,7 +358,6 @@ mod tests {
     use crate::serde::{consumer_connection, map_to_json, map_to_json_test};
     use crate::starknet::felt_element;
     use crate::web::simple_route;
-    use super::*;
 
     #[test]
     fn it_works() {
@@ -735,7 +734,6 @@ mod tests {
         _mod2_simple_type_6_nullable_3_get_value::test();
     }
 
-
     #[test]
     fn mod2_test_7_1() {
         _mod2_simple_type_7_pointer_1_init::test();
@@ -821,7 +819,6 @@ mod tests {
         _mod3_array_collection_1_array_13_merge::test();
     }
 
-
     #[test]
     fn mod3_test_1_14() {
         _mod3_array_collection_1_array_14_convert::test();
@@ -831,7 +828,6 @@ mod tests {
     fn mod3_test_1_15() {
         _mod3_array_collection_1_array_15_sum::test();
     }
-
 
     #[test]
     fn mod3_test_1_16() {
@@ -852,7 +848,6 @@ mod tests {
     fn mod3_test_1_19() {
         _mod3_array_collection_1_array_19_every_some::test();
     }
-
 
     #[test]
     fn mod3_test_1_20() {
@@ -989,12 +984,10 @@ mod tests {
         _mod3_set_collection_3_set_9_convert::test();
     }
 
-
     #[test]
     fn mod3_test_3_10() {
         _mod3_set_collection_3_set_10_hash_sorted::test();
     }
-
 
     #[test]
     fn mod3_test_4_1() {
@@ -1005,7 +998,6 @@ mod tests {
     fn mod3_test_4_2() {
         _mod3_iter_collection_4_iter_2_reverse::test();
     }
-
 
     #[test]
     fn mod3_test_5_1() {
@@ -1072,12 +1064,10 @@ mod tests {
         _mod4_loop_2_3_for_in_index::test();
     }
 
-
     #[test]
     fn mod4_test_2_4() {
         _mod4_loop_2_4_while::test();
     }
-
 
     #[test]
     fn mod4_test_2_5() {
@@ -1094,7 +1084,6 @@ mod tests {
         _mod4_loop_2_7_braces::test();
     }
 
-
     #[test]
     fn mod4_test_2_8() {
         _mod4_loop_2_8_death_loop::test();
@@ -1105,36 +1094,30 @@ mod tests {
         _mod4_interruption_3_1_continue::test();
     }
 
-
     #[test]
     fn mod4_test_3_2() {
         _mod4_interruption_3_2_break::test();
     }
-
 
     #[test]
     fn mod4_test_3_3_1() {
         _mod4_interruption_3_3_return_1::test();
     }
 
-
     #[test]
     fn mod4_test_3_3_2() {
         _mod4_interruption_3_3_return_2::test();
     }
-
 
     #[test]
     fn mod4_test_3_4() {
         _mod4_interruption_3_4_label::test();
     }
 
-
     #[test]
     fn mod5_test_5_1_1() {
         _mod5_class_1_construct_1_default::test();
     }
-
 
     #[test]
     fn mod5_test_5_1_2() {
@@ -1170,7 +1153,6 @@ mod tests {
     fn mod5_test_5_2_3() {
         _mod5_class_2_method_3_without_param::test();
     }
-
 
     #[test]
     fn mod5_test_5_2_4() {
@@ -1476,7 +1458,6 @@ mod tests {
         _mod11_function_2_with_out_return_value_1::test();
     }
 
-
     #[test]
     fn mod11_test_11_3_1() {
         _mod11_function_3_mult_return_value_1::test();
@@ -1521,7 +1502,6 @@ mod tests {
     fn mod12_test_12_1_1() {
         _mod12_lambda_1_one_param_1::test();
     }
-
 
     #[test]
     fn mod12_test_12_2_1() {
@@ -1627,7 +1607,6 @@ mod tests {
     fn mod14_test_14_4_1() {
         _mod14_exception_4_re_throw_exception_1::test();
     }
-
 
     #[test]
     fn mod14_test_14_5_1() {
@@ -1784,7 +1763,6 @@ mod tests {
         _mod16_file_3_binary_2_write::test();
     }
 
-
     #[test]
     fn mod16_test_16_3_3() {
         _mod16_file_3_binary_3_buffer_read_write::test();
@@ -1890,7 +1868,6 @@ mod tests {
         _mod19_algorithms_1_search_2_fast_line::test();
     }
 
-
     #[test]
     fn mod19_test_19_1_3() {
         _mod19_algorithms_1_search_3_binary::test();
@@ -1915,7 +1892,6 @@ mod tests {
     fn mod19_test_19_2_3() {
         _mod19_algorithms_2_sort_3_counting::test();
     }
-
 
     #[test]
     fn mod19_test_19_2_4() {
@@ -2062,7 +2038,6 @@ mod tests {
         minimum_number_game::test();
     }
 
-
     #[test]
     fn leetcode_find_common_elements_between_two_arrays() {
         find_common_elements_between_two_arrays::test();
@@ -2110,26 +2085,22 @@ mod tests {
     }
 
     #[test]
-    fn test_struct_1(){
+    fn test_struct_1() {
         people::test1();
     }
 
     #[test]
-    fn test_struct_2(){
+    fn test_struct_2() {
         people::test2();
     }
 
     #[test]
-    fn test_web_1(){
+    fn test_web_1() {
         simple_route::main();
     }
 
     #[test]
-    fn test_http_body_1(){
+    fn test_http_body_1() {
         http_body::test1();
     }
-
 }
-
-
-

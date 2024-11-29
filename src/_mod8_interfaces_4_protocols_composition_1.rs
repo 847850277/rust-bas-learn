@@ -6,7 +6,7 @@ trait Priced {
 }
 struct Goods {
     id: i32,
-    price: f64
+    price: f64,
 }
 impl PId for Goods {
     fn get_id(&self) -> i32 {
@@ -22,24 +22,23 @@ impl Priced for Goods {
 trait PGood: PId + Priced {}
 impl PGood for Goods {}
 struct Product {
-    info: Box<dyn PGood>
+    info: Box<dyn PGood>,
 }
 impl Product {
     fn new(info: Box<dyn PGood>) -> Product {
-        return Product {info: info};
+        return Product { info: info };
     }
     fn show_info(&self) {
-        println!("id = {}, price = {}",
-                 self.info.get_id(),
-                 self.info.get_price());
+        println!(
+            "id = {}, price = {}",
+            self.info.get_id(),
+            self.info.get_price()
+        );
     }
 }
 
 pub(crate) fn test() {
-
-    let bread = Goods{id: 1, price: 35.5};
-    let product = Product::new(
-        Box::new(bread));
+    let bread = Goods { id: 1, price: 35.5 };
+    let product = Product::new(Box::new(bread));
     product.show_info();
-
 }

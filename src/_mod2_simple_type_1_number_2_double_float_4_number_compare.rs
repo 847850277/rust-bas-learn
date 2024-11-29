@@ -17,5 +17,4 @@ pub(crate) fn test() {
     println!("delta is {delta}");
     println!("is_equal1 is {is_equal1}");
     println!("is_equal2 is {is_equal2}");
-
 }

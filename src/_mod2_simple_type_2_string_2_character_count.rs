@@ -2,8 +2,7 @@ pub(crate) fn test() {
     let string_reverse = reverse("string");
     // string_reverse is "gnirts"
 
-    println!("string_reverse is \"{}\"",
-             string_reverse);
+    println!("string_reverse is \"{}\"", string_reverse);
 }
 
 fn reverse(word: &str) -> String {
@@ -12,8 +11,7 @@ fn reverse(word: &str) -> String {
 
     let mut i = char_count;
     let mut result = String::new();
-    let chars: Vec<char> = word
-        .chars().collect();
+    let chars: Vec<char> = word.chars().collect();
     while i > 0 {
         i = i - 1;
         result += &chars[i].to_string();
@@ -21,4 +19,3 @@ fn reverse(word: &str) -> String {
 
     return result;
 }
-

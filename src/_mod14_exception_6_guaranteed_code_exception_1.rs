@@ -1,5 +1,5 @@
 struct ScopeCall<F: FnMut()> {
-    c: F
+    c: F,
 }
 impl<F: FnMut()> Drop for ScopeCall<F> {
     fn drop(&mut self) {
@@ -7,9 +7,13 @@ impl<F: FnMut()> Drop for ScopeCall<F> {
     }
 }
 macro_rules! defer {
-    ($e:expr) => (
-        let _scope_call = ScopeCall { c: || -> () { $e; } };
-    )
+    ($e:expr) => {
+        let _scope_call = ScopeCall {
+            c: || -> () {
+                $e;
+            },
+        };
+    };
 }
 fn panic_if_true(param: bool) {
     //Guaranteed code execution
@@ -23,7 +27,6 @@ fn panic_if_true(param: bool) {
 }
 
 pub(crate) fn test() {
-
     panic_if_true(false);
     //printed:
     //start

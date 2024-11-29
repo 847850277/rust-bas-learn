@@ -4,12 +4,9 @@ pub(crate) fn test() {
     //contain2 is true
     let contain4 = numbers.contains(&4);
     //contain4 is false
-    let index5 = numbers.iter()
-        .position(|&x| x == 5)
-        .unwrap();
+    let index5 = numbers.iter().position(|&x| x == 5).unwrap();
     //index5 is 2
     println!("contain2 is {contain2}");
     println!("contain4 is {contain4}");
     println!("index5 is {index5}");
-
 }

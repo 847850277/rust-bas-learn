@@ -1,18 +1,17 @@
 use std::sync::{Arc, Barrier};
 use std::thread;
-use std::time::Duration;
 use std::thread::JoinHandle;
+use std::time::Duration;
 pub(crate) fn test() {
-
     let show_number = move |number: i32| {
         thread::sleep(Duration::from_millis(100));
         print!("{number}, ");
     };
-    let mut handles:Vec<JoinHandle<()>> = vec![];
+    let mut handles: Vec<JoinHandle<()>> = vec![];
     let barrier = Arc::new(Barrier::new(1));
     for i in 1..11 {
         thread::sleep(Duration::from_millis(1));
-        let c:Arc<Barrier> = barrier.clone();
+        let c: Arc<Barrier> = barrier.clone();
         handles.push(thread::spawn(move || {
             show_number(i);
             c.wait();
@@ -25,5 +24,4 @@ pub(crate) fn test() {
         handle.join().unwrap();
     }
     //A barrier will block n-1 threads which call wait() and then wake up all threads at once when the nth thread calls wait().
-
 }

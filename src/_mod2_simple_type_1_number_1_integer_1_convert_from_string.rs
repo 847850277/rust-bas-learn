@@ -12,5 +12,4 @@ pub fn test() {
     dbg!(number1);
 
     dbg!(number2);
-
 }

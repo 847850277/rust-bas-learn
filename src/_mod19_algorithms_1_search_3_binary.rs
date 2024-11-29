@@ -1,11 +1,10 @@
 use chrono::Duration;
 //works when the array is sorted
-fn search(arr: &[i32], x: i32) -> Option<usize>
-{
+fn search(arr: &[i32], x: i32) -> Option<usize> {
     let mut i = 0;
     let mut j = arr.len();
     while i != j {
-        let m = (i + j)/2;
+        let m = (i + j) / 2;
         if x == arr[m] {
             return Some(m);
         }
@@ -19,15 +18,14 @@ fn search(arr: &[i32], x: i32) -> Option<usize>
 }
 
 pub(crate) fn test() {
-
-    let nums = [ 2, 3, 5, 7, 11, 13, 17 ];
+    let nums = [2, 3, 5, 7, 11, 13, 17];
     println!("{:?}", search(&nums, 1));
-//print -1
+    //print -1
     println!("{:?}", search(&nums, 7));
-//print 3
+    //print 3
     println!("{:?}", search(&nums, 19));
-//print -1
-// *** simplified speed test ***
+    //print -1
+    // *** simplified speed test ***
     let mut items = [0i32; 1_000_000];
     for i in 0..items.len() {
         items[i] = i as i32;
@@ -42,6 +40,5 @@ pub(crate) fn test() {
     let delta: Duration = now - start;
     println!("result is {:?}", result);
     println!("{}", delta.num_milliseconds());
-// about 389 milliseconds
-
+    // about 389 milliseconds
 }

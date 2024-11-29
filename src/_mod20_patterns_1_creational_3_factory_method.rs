@@ -20,17 +20,16 @@ impl Employee for Manager {
 struct BookerCreator {}
 impl BookerCreator {
     fn create_employee() -> Box<dyn Employee> {
-        return Box::from(Booker{});
+        return Box::from(Booker {});
     }
 }
 //BookerCreator is ConcreteCreator
 struct ManagerCreator {}
 impl ManagerCreator {
     fn create_employee() -> Box<dyn Employee> {
-        return Box::from(Manager{});
+        return Box::from(Manager {});
     }
 }
-
 
 pub(crate) fn test() {
     //Client

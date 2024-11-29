@@ -14,5 +14,4 @@ pub(crate) fn test() {
     string.replace_range(4..5, "3");
     //string is "1-2-3"
     println!("string is \"{string}\"");
-
 }

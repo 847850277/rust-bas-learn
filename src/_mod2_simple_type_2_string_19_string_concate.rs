@@ -11,5 +11,4 @@ pub(crate) fn test() {
     // sGo is "three, two, one, go!"
 
     print!("{s_go}");
-
 }

@@ -5,5 +5,4 @@ pub(crate) fn test() {
     //result is 3
 
     println!("result is {result}");
-
 }

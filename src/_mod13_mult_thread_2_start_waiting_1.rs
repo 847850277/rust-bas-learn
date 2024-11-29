@@ -1,17 +1,18 @@
-use std::thread;
 use std::sync::mpsc;
+use std::thread;
 use std::time::Duration;
 fn add(a: i32, b: i32) -> i32 {
     thread::sleep(Duration::from_secs(1));
     return a + b;
 }
 pub(crate) fn test() {
-
-//first method
+    //first method
     thread::spawn(|| {
         let result = add(3, 5);
         println!("result is {result}");
-    }).join().unwrap();
+    })
+    .join()
+    .unwrap();
     println!("main thread");
     println!();
     //output:
@@ -29,5 +30,4 @@ pub(crate) fn test() {
         println!("result is {result}");
     }
     println!("main thread");
-
 }

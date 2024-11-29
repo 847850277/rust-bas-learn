@@ -6,7 +6,7 @@ fn get_avg(values: &[i32]) -> f32 {
     for i in values {
         sum += i;
     }
-    return (sum as f32)/(values.len() as f32);
+    return (sum as f32) / (values.len() as f32);
 }
 
 pub(crate) fn test() {

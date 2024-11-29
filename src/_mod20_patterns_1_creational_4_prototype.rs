@@ -7,12 +7,12 @@ trait Shape {
 //Square is ConcretePrototype
 #[derive(Debug)]
 struct Square {
-    line_count: i32
+    line_count: i32,
 }
 impl Shape for Square {
     fn clone(&self) -> Box<dyn Shape> {
         return Box::from(Square {
-            line_count: self.line_count
+            line_count: self.line_count,
         });
     }
     fn as_any(&self) -> &dyn Any {
@@ -21,7 +21,7 @@ impl Shape for Square {
 }
 //ShapeMaker contains a Shape
 struct ShapeMaker {
-    shape: Box<dyn Shape>
+    shape: Box<dyn Shape>,
 }
 //MakeShape creates a copy of the Shape
 impl ShapeMaker {
@@ -31,16 +31,16 @@ impl ShapeMaker {
 }
 
 pub(crate) fn test() {
-
     //Client
-    let square = Square{ line_count: 4 };
-    let maker = ShapeMaker{
-        shape: Box::from(square) };
+    let square = Square { line_count: 4 };
+    let maker = ShapeMaker {
+        shape: Box::from(square),
+    };
     let square1 = maker.make_shape();
     let square2 = maker.make_shape();
-    println!("square1 is {:?}", square1.as_any()
-        .downcast_ref::<Square>().unwrap());
-    println!("square2 is {:?}", square2.as_any()
-        .downcast_ref::<Square>());
-
+    println!(
+        "square1 is {:?}",
+        square1.as_any().downcast_ref::<Square>().unwrap()
+    );
+    println!("square2 is {:?}", square2.as_any().downcast_ref::<Square>());
 }

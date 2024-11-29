@@ -1,14 +1,18 @@
-pub fn test(){
+pub fn test() {
     #[allow(dead_code)]
     #[derive(Debug)]
     enum Planet {
-        Mercury = 1, Venus, Earth
+        Mercury = 1,
+        Venus,
+        Earth,
     }
 
     #[allow(dead_code)]
     #[derive(Debug)]
     enum PreciousMetal {
-        Platinum = 1, Gold, Silver
+        Platinum = 1,
+        Gold,
+        Silver,
     }
 
     let gold = PreciousMetal::Gold;
@@ -24,4 +28,3 @@ pub fn test(){
     println!("earth is {:#?}", earth_value);
     dbg!(earth_value);
 }
-

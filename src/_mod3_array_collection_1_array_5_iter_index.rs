@@ -11,7 +11,6 @@ pub(crate) fn test() {
     }
     //str1 is '2; 3; 5; 7; 11; 13; 17'
 
-
     let mut str2 = String::new();
     for i in 0..numbers.len() {
         if i > 0 {
@@ -22,5 +21,4 @@ pub(crate) fn test() {
 
     println!("str1 is '{str1}'");
     println!("str2 is '{str2}'");
-
 }

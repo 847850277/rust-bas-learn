@@ -7,16 +7,22 @@ fn do_sort(items: &mut [i32], fst: usize, lst: usize) {
     }
     let mut i = fst;
     let mut j = lst;
-    let x = items[(fst + lst)/2];
+    let x = items[(fst + lst) / 2];
     while i < j {
-        while items[i] < x { i+=1 }
-        while items[j] > x { j-=1 }
+        while items[i] < x {
+            i += 1
+        }
+        while items[j] > x {
+            j -= 1
+        }
         if i <= j {
             let tmp = items[i];
             items[i] = items[j];
             items[j] = tmp;
             i += 1;
-            if j > 0 { j -= 1 }
+            if j > 0 {
+                j -= 1
+            }
         }
     }
     do_sort(items, fst, j);
@@ -24,11 +30,10 @@ fn do_sort(items: &mut [i32], fst: usize, lst: usize) {
 }
 
 pub(crate) fn test() {
-
     fn sort(items: &mut [i32]) {
         do_sort(items, 0, items.len() - 1);
     }
-    let mut nums = [ 4, 1, 5, 3, 2 ];
+    let mut nums = [4, 1, 5, 3, 2];
     sort(&mut nums);
     // sortItems is {1, 2, 3, 4, 5}
     println!("nums is {:?}", nums);
@@ -47,9 +52,7 @@ pub(crate) fn test() {
     }
     let now = chrono::offset::Utc::now();
     let delta: Duration = now - start;
-    println!("milliseconds is {}",
-             delta.num_milliseconds());
+    println!("milliseconds is {}", delta.num_milliseconds());
     println!("items is {:?}", items);
     // about 7 milliseconds
-
 }

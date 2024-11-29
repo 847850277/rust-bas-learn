@@ -1,7 +1,6 @@
 use chrono::prelude::*;
 
 pub(crate) fn test() {
-
     let now = chrono::offset::Local::now();
     let year = now.year();
     let month = now.month();
@@ -18,5 +17,4 @@ pub(crate) fn test() {
     println!("minute is {minute}");
     println!("second is {second}");
     println!("weekday is '{weekday}'");
-
 }

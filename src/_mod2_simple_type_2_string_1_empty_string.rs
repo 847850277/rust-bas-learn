@@ -9,5 +9,4 @@ pub(crate) fn test() {
     if another_empty_string.is_empty() {
         println!("another string is empty")
     }
-
 }

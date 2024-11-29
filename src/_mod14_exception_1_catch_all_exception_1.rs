@@ -14,8 +14,7 @@ pub(crate) fn test() {
     }
 }
 
-fn throw_when_null_or_empty(vector: Option<Vec<i32>>) ->
-Result<(), VecError> {
+fn throw_when_null_or_empty(vector: Option<Vec<i32>>) -> Result<(), VecError> {
     if vector == None {
         return Err(VecError::NoneError);
     }

@@ -5,7 +5,6 @@ use sqlx::sqlite::{SqliteConnectOptions, SqlitePool, SqlitePoolOptions};
 use std::{net::SocketAddr, str::FromStr};
 use tokio::net::TcpListener;
 
-
 #[tokio::main]
 pub async fn main() {
     let poll = connect_to_database().await;
@@ -40,8 +39,8 @@ pub async fn main() {
         listener,
         app.into_make_service_with_connect_info::<SocketAddr>(),
     )
-        .await
-        .unwrap();
+    .await
+    .unwrap();
 }
 
 async fn greet(session: Session<SessionSqlitePool>) -> String {

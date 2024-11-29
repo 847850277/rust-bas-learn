@@ -1,6 +1,5 @@
 use regex::Regex;
 pub(crate) fn test() {
-
     let data1 = "aaab";
     let data2 = "aaaba";
     let pattern = r"^a+b$";
@@ -11,5 +10,4 @@ pub(crate) fn test() {
     //b2 is false
     println!("b1 is {b1}");
     println!("b2 is {b2}");
-
 }

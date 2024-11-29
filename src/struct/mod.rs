@@ -1,2 +1,2 @@
-pub mod student;
 pub mod people;
+pub mod student;

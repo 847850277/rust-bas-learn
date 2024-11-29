@@ -18,19 +18,23 @@ pub(crate) fn test() {
             println!("bool: {:?}", v);
         });
     }
-
 }
 
-
-pub fn get_properties() -> HashMap<String,Box<dyn Any>> {
+pub fn get_properties() -> HashMap<String, Box<dyn Any>> {
     let mut properties = HashMap::new();
     properties.insert("brokerName".to_string(), Box::new(1) as Box<dyn Any>);
-    properties.insert("broker_identity.brokerId".to_string(), Box::new("2".to_string()) as Box<dyn Any>);
-    properties.insert("broker_identity.brokerClusterName".to_string(), Box::new(true) as Box<dyn Any>);
+    properties.insert(
+        "broker_identity.brokerId".to_string(),
+        Box::new("2".to_string()) as Box<dyn Any>,
+    );
+    properties.insert(
+        "broker_identity.brokerClusterName".to_string(),
+        Box::new(true) as Box<dyn Any>,
+    );
     properties
 }
 
-pub fn get_properties_1() -> HashMap<String,String> {
+pub fn get_properties_1() -> HashMap<String, String> {
     let mut properties = HashMap::new();
     // properties.insert("brokerName".to_string(), 1);
     properties.insert("broker_identity.brokerId".to_string(), String::new());

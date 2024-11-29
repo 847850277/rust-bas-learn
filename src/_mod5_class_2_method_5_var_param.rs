@@ -1,5 +1,5 @@
 struct Log<'a> {
-    last_data: &'a str
+    last_data: &'a str,
 }
 impl<'a> Log<'a> {
     fn print5(&mut self, mut data: &'a str) {
@@ -12,9 +12,7 @@ impl<'a> Log<'a> {
 }
 
 pub(crate) fn test() {
-
-    let mut log = Log{ last_data: ""};
+    let mut log = Log { last_data: "" };
     log.print5("12345679");
-//printed "12345"
-
+    //printed "12345"
 }

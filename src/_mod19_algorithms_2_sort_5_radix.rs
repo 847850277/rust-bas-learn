@@ -1,9 +1,7 @@
 use chrono::Duration;
 // Time Complexity O(nk)
 // Space Complexity O(n+k)
-fn list_to_buckets(items: &mut [i32],
-                   base: i32, i: u32) -> Vec<Vec<i32>>
-{
+fn list_to_buckets(items: &mut [i32], base: i32, i: u32) -> Vec<Vec<i32>> {
     let mut buckets = vec![Vec::<i32>::new(); base as usize];
     let p_base = base.pow(i);
     for i in 0..items.len() {
@@ -32,7 +30,7 @@ fn sort(items: &mut [i32]) {
 }
 
 pub(crate) fn test() {
-    let mut nums = [ 4, 1, 5, 3, 2  ];
+    let mut nums = [4, 1, 5, 3, 2];
     sort(&mut nums);
     // sortItems is {1, 2, 3, 4, 5}
     println!("nums is {:?}", nums);
@@ -51,8 +49,7 @@ pub(crate) fn test() {
     }
     let now = chrono::offset::Utc::now();
     let delta: Duration = now - start;
-    println!("milliseconds is {}",
-             delta.num_milliseconds());
+    println!("milliseconds is {}", delta.num_milliseconds());
     println!("items is {:?}", items);
     // about 171 milliseconds
 }

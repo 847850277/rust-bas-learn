@@ -9,5 +9,4 @@ pub(crate) fn test() {
 
     println!("value1 is {value1}");
     println!("value2 is {value2}");
-
 }

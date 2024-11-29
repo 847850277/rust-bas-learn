@@ -1,7 +1,7 @@
 use std::mem::replace;
 struct Settings<'a> {
     port: i32,
-    host: &'a str
+    host: &'a str,
 }
 struct Peripherals<'a> {
     settings: Option<Settings<'a>>,
@@ -13,15 +13,10 @@ impl Peripherals<'_> {
     }
 }
 static mut PERIPHERALS: Peripherals = Peripherals {
-    settings: Some(Settings {
-        port: 0,
-        host: "",
-    }),
+    settings: Some(Settings { port: 0, host: "" }),
 };
 
 pub(crate) fn test() {
-
-
     let mut settings1 = unsafe { PERIPHERALS.take_setting() };
     settings1.host = "192.168.100.1";
     settings1.port = 33;
@@ -29,5 +24,4 @@ pub(crate) fn test() {
     println!("host is {:#?}", settings1.host);
 
     //This structure allows us to obtain a single instance of our peripheral. If we try to call take_serial() more than once, our code will panic!
-
 }

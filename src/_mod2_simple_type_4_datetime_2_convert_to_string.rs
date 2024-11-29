@@ -1,7 +1,6 @@
 use chrono;
 
 pub(crate) fn test() {
-
     let now = chrono::Local::now();
 
     let short_style_ru = now.format("%d.%m.%Y %H:%M");
@@ -16,5 +15,4 @@ pub(crate) fn test() {
     let custom_style = now.format("%Y-%m-%d");
     //custom_style is "2015-06-22"
     println!("custom_style is '{custom_style}'");
-
 }

@@ -3,5 +3,4 @@ pub(crate) fn test() {
     let pow8 = pow_of_two(8);
     //pow8 is 256
     println!("pow8 is {pow8}");
-
 }

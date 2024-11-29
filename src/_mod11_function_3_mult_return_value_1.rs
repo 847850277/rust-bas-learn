@@ -5,7 +5,6 @@ pub(crate) fn test() {
     //result.last is 5
     println!("first is {:?}", result.0);
     println!("last is {:?}", result.1);
-
 }
 
 fn get_first_last(ar: &[i32]) -> (i32, i32) {

@@ -8,5 +8,4 @@ pub(crate) fn test() {
     if !(a >= b || a >= c) {
         println!("A is the smallest.");
     }
-
 }

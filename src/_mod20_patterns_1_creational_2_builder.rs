@@ -6,7 +6,7 @@ trait ITextBuilder {
 }
 //ConcreteBuilder 1
 struct TextBuilder {
-    text: String
+    text: String,
 }
 impl ITextBuilder for TextBuilder {
     fn add_text(&mut self, value: &str) {
@@ -22,7 +22,7 @@ impl ITextBuilder for TextBuilder {
 }
 //ConcreteBuilder 2
 struct HtmlBuilder {
-    html: String
+    html: String,
 }
 impl ITextBuilder for HtmlBuilder {
     fn add_text(&mut self, value: &str) {
@@ -49,17 +49,17 @@ impl TextMaker {
     }
 }
 pub(crate) fn test() {
-
-//Client
+    //Client
     let text_builder = Box::new(TextBuilder {
-        text: String::new() });
+        text: String::new(),
+    });
     TextMaker::make_text(text_builder);
-//printed: line 1
-//         line 2
+    //printed: line 1
+    //         line 2
     let html_builder = Box::new(HtmlBuilder {
-        html: String::new() });
+        html: String::new(),
+    });
     TextMaker::make_text(html_builder);
-//printed: <span>line 1</span><br/>
-//         <span>line 2</span>
-
+    //printed: <span>line 1</span><br/>
+    //         <span>line 2</span>
 }

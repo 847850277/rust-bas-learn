@@ -13,8 +13,7 @@ impl Shape for Square {
 }
 
 pub(crate) fn test() {
-    let square = Square{};
+    let square = Square {};
     square.fill("Red");
     square.draw();
-
 }

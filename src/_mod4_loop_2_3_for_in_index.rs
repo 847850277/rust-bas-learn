@@ -8,5 +8,4 @@ pub(crate) fn test() {
     for (i, line) in lines.enumerate() {
         println!("line {}: '{}'", i + 1, line);
     }
-
 }

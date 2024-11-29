@@ -6,16 +6,14 @@ fn search(items: &Vec<i32>, x: i32) -> Option<usize> {
     arr.push(x);
     loop {
         if arr[i] == x {
-            return if i < count {
-                Some(i) } else { None };
+            return if i < count { Some(i) } else { None };
         }
-        i+=1;
+        i += 1;
     }
 }
 
 pub(crate) fn test() {
-
-    let mut nums = vec![ 2i32, 3, 5, 7, 11, 13, 17 ];
+    let mut nums = vec![2i32, 3, 5, 7, 11, 13, 17];
     println!("{:?}", search(&nums, 1));
     //print -1
     println!("{:?}", search(&nums, 7));
@@ -37,6 +35,5 @@ pub(crate) fn test() {
     let delta: Duration = now - start;
     println!("result is {:?}", result);
     println!("{}", delta.num_milliseconds());
-// about 3382 milliseconds
-
+    // about 3382 milliseconds
 }

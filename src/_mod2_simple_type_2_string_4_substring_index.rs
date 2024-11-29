@@ -8,7 +8,6 @@ pub(crate) fn test() {
         // The division was valid
         Some(x) => println!("index is {x}"),
         // The division was invalid
-        None    => println!("Substring not found"),
+        None => println!("Substring not found"),
     }
-
 }

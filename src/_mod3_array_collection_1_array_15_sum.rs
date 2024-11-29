@@ -7,5 +7,4 @@ pub(crate) fn test() {
     // sSum is 'A,B,C'
     println!("n_sum is {n_sum}");
     println!("s_sum is '{s_sum}'");
-
 }

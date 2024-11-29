@@ -1,5 +1,8 @@
 enum Season {
-    Summer, Fall, Winter, Spring
+    Summer,
+    Fall,
+    Winter,
+    Spring,
 }
 
 pub(crate) fn test() {
@@ -7,5 +10,4 @@ pub(crate) fn test() {
     let winter = Season::Winter;
     println!("summer is {:#?}", summer as u32);
     println!("winter is {:#?}", winter as u32);
-
 }

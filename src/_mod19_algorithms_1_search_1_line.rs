@@ -6,14 +6,13 @@ fn search(arr: &[i32], x: i32) -> Option<usize> {
         if arr[i] == x {
             return Some(i);
         }
-        i+=1;
+        i += 1;
     }
     return None;
 }
 
 pub(crate) fn test() {
-
-    let nums = [ 2, 3, 5, 7, 11, 13, 17 ];
+    let nums = [2, 3, 5, 7, 11, 13, 17];
     println!("{:?}", search(&nums, 1));
     //print -1
     println!("{:?}", search(&nums, 7));
@@ -36,5 +35,4 @@ pub(crate) fn test() {
     println!("result is {:?}", result);
     println!("{}", delta.num_milliseconds());
     // about 389 milliseconds
-
 }

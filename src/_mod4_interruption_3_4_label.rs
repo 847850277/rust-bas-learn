@@ -12,5 +12,4 @@ pub(crate) fn test() {
     }
     //first_match_value is 2
     print!("{}", first_match_value);
-
 }

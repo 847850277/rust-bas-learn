@@ -1,5 +1,5 @@
 struct Square {
-    side: i32
+    side: i32,
 }
 impl Square {
     // Mutable access.
@@ -12,7 +12,6 @@ impl Square {
 }
 
 pub(crate) fn test() {
-
     //In Rust there are no properties
     let mut square = Square { side: 2 };
     //square.area is 4
@@ -20,5 +19,4 @@ pub(crate) fn test() {
     square.set_area(9);
     //square.side is 3
     println!("square.side is {}", square.side);
-
 }

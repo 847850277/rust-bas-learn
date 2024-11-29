@@ -5,5 +5,4 @@ pub(crate) fn test() {
     }
     //sum10 is 55
     println!("sum10 is {sum10}");
-
 }

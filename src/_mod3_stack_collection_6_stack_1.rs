@@ -16,5 +16,4 @@ pub(crate) fn test() {
     println!("first is {:?}", first);
     println!("second is {:?}", second);
     println!("third is {:?}", third);
-
 }

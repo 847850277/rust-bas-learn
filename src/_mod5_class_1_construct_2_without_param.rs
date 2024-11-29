@@ -1,5 +1,5 @@
 struct Man<'a> {
-    name: &'a str
+    name: &'a str,
 }
 impl<'a> Man<'_> {
     fn new() -> Man<'a> {
@@ -8,8 +8,6 @@ impl<'a> Man<'_> {
 }
 
 pub(crate) fn test() {
-
     let man = Man::new();
     println!("name is '{}'", man.name);
-
 }

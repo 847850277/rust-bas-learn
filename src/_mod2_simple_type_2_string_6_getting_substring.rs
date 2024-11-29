@@ -4,5 +4,4 @@ pub(crate) fn test() {
     // way1 is "way"
 
     print!("way is \"{way}\"");
-
 }

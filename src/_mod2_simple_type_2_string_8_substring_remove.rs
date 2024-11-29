@@ -12,8 +12,6 @@ pub(crate) fn test() {
 
     // with str
     let data_str = "Substring removing!";
-    let data_str1 = format!("{}{}",
-                            &data_str[..9], &data_str[18..]);
+    let data_str1 = format!("{}{}", &data_str[..9], &data_str[18..]);
     println!("data_str1 is \"{}\"", data_str1);
-
 }

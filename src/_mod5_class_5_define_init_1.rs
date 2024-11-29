@@ -7,8 +7,6 @@ impl SomeClass {
 }
 
 pub(crate) fn test() {
-
     let some_class = SomeClass;
     some_class.show_name();
-
 }

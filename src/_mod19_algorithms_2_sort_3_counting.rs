@@ -11,7 +11,7 @@ fn sort(items: &mut [i32]) {
         counts[n] += 1;
     }
     let mut total = 0;
-    for i in min..max+1 {
+    for i in min..max + 1 {
         let n = (i - min) as usize;
         let old_count = counts[n];
         counts[n] = total;
@@ -27,7 +27,7 @@ fn sort(items: &mut [i32]) {
 }
 
 pub(crate) fn test() {
-    let mut nums = [ 4, 1, 5, 3, 2 ];
+    let mut nums = [4, 1, 5, 3, 2];
     let sorted_nums = sort(&mut nums);
     // nums is {1, 2, 3, 4, 5}
     println!("sorted_nums is {:?}", sorted_nums);
@@ -46,9 +46,7 @@ pub(crate) fn test() {
     }
     let now = chrono::offset::Utc::now();
     let delta: Duration = now - start;
-    println!("milliseconds is {}",
-             delta.num_milliseconds());
+    println!("milliseconds is {}", delta.num_milliseconds());
     println!("sorted_items is {:?}", sort(&mut items));
     // about 130 milliseconds
-
 }
